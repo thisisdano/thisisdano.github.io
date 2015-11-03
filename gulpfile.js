@@ -14,34 +14,34 @@ var gulp = require('gulp'),
     cp = require('child_process');
 
 gulp.task('styles', function() {
-  return gulp.src('src/sass/*.sass')
+  return gulp.src('styles/*.scss')
     .pipe(plumber())
-    .pipe(sass({ style: 'expanded' }))
+    .pipe(sass({ style: 'styles' }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(gulp.dest('stylesheets'))
+    .pipe(gulp.dest('styles'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('stylesheets'))
-    .pipe(gulp.dest('_site/stylesheets'))
+    .pipe(gulp.dest('styles'))
+    .pipe(gulp.dest('_site/styles'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('src/javascripts/**/*.js')
+  return gulp.src('js/*.js')
     //.pipe(jshint('.jshintrc'))
     //.pipe(jshint.reporter('default'))
     .pipe(concat('site.js'))
-    .pipe(gulp.dest('javascripts'))
+    .pipe(gulp.dest('js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('javascripts'))
-    .pipe(gulp.dest('_site/javascripts'))
+    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('_site/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 gulp.task('clean', function() {
-  return gulp.src(['stylesheets', 'javascripts'], {read: false})
+  return gulp.src(['styles', 'js'], {read: false})
     .pipe(clean());
 });
 
@@ -75,9 +75,9 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 
 gulp.task('watch', function() {
   // Watch .sass files
-  gulp.watch('src/sass/**/*.sass', ['styles']);
+  gulp.watch('styles/*.scss', ['styles']);
   // Watch .js files
-  gulp.watch('src/javascripts/**/*.js', ['scripts']);
+  gulp.watch('js/*.js', ['scripts']);
   gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
