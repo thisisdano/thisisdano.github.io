@@ -1,5 +1,6 @@
-var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+// Include gulp
+var gulp = require('gulp'); 
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -10,77 +11,69 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     plumber = require('gulp-plumber'),
-    browserSync = require('browser-sync'),
-    cp = require('child_process');
+    browserSync = require('browser-sync').create(),
+    cp = require('child_process'),
+    reload  = browserSync.reload();
 
-gulp.task('styles', function() {
-  return gulp.src('styles/*.scss')
-    .pipe(plumber())
-    .pipe(sass({ style: 'styles' }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(gulp.dest('styles'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
-    .pipe(gulp.dest('styles'))
-    .pipe(gulp.dest('_site/styles'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(notify({ message: 'Styles task complete' }));
-});
-
-gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
-    //.pipe(jshint('.jshintrc'))
-    //.pipe(jshint.reporter('default'))
-    .pipe(concat('site.js'))
-    .pipe(gulp.dest('js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('js'))
-    .pipe(gulp.dest('_site/js'))
-    .pipe(notify({ message: 'Scripts task complete' }));
-});
-
-gulp.task('clean', function() {
-  return gulp.src(['styles', 'js'], {read: false})
-    .pipe(clean());
-});
-
-/**
- * Build the Jekyll Site
- */
+// Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify('Building Jekyll');
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-/**
- * Wait for jekyll-build, then launch the Server
- */
+// Wait for jekyll-build, then launch the Server
 gulp.task('browser-sync', ['jekyll-build'], function() {
-    browserSync.init(null, {
-        server: {
-            baseDir: '_site'
-        },
+    browserSync.init({
+        server: "_site",
         host: "localhost"
     });
 });
 
-gulp.task('watch', function() {
-  // Watch .sass files
-  gulp.watch('styles/*.scss', ['styles']);
-  // Watch .js files
-  gulp.watch('js/*.js', ['scripts']);
-  gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+// Lint Task
+gulp.task('lint', function() {
+    return gulp.src('js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'browser-sync', 'watch');
+// Compile Our Sass
+gulp.task('sass', function() {
+    return gulp.src('styles/scss/*.scss')
+		.pipe(plumber())
+		.pipe(sass({ style: 'expanded' }))
+		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		.pipe(gulp.dest('styles/css'))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(minifycss())
+		.pipe(gulp.dest('styles/css'))
+		.pipe(gulp.dest('_site/styles/css'))
+		.pipe(browserSync.stream())
+		.pipe(notify({ message: 'Styles complete' }));
 });
+
+// Concatenate & Minify JS
+gulp.task('scripts', function() {
+    return gulp.src('js/*.js')
+	    .pipe(concat('site-all.js'))
+	    .pipe(gulp.dest('js/dist'))
+	    .pipe(rename({suffix: '.min'}))
+	    .pipe(uglify())
+	    .pipe(gulp.dest('js/dist'))
+	    .pipe(gulp.dest('_site/js/dist'))
+		.pipe(browserSync.stream())
+	    .pipe(notify({ message: 'Scripts complete' }));
+});
+
+// Rebuild Jekyll & reload
+gulp.task('html-rebuild', ['jekyll-build'], browserSync.reload);
+
+// Watch Files For Changes
+gulp.task('watch', function() {
+    gulp.watch('js/*.js', ['lint', 'scripts']);
+    gulp.watch('styles/scss/*.scss', ['sass']);
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['html-rebuild']);
+});
+
+// Default Task
+gulp.task('default', ['lint', 'sass', 'scripts', 'browser-sync', 'watch']);

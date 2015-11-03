@@ -5,3 +5,5 @@ author :
   email : dan.o.williams@gmail.com
   github : thisisdano
   twitter : thisisdano
+
+exclude: [node_modules, package.json, npm-debug.log, Gruntfile.js, styles/scss]
