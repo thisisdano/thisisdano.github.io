@@ -1,0 +1,29 @@
+{
+  "name": "thisisdano.github.io",
+  "version": "1.0.0",
+  "description": "Dano's super-fun github website",
+  "main": "index.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisdano/thisisdano.github.io.git"
+  },
+  "keywords": [
+    "dano",
+    "design",
+    "graphic",
+    "design",
+    "web",
+    "design",
+    "good",
+    "design"
+  ],
+  "author": "Dano Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisisdano/thisisdano.github.io/issues"
+  },
+  "homepage": "https://github.com/thisisdano/thisisdano.github.io#readme"
+}
