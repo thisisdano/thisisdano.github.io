@@ -1,7 +1,7 @@
 # Hello!
 My name’s Dano and I’m a designer. I’ve recently worked with Harvard’s [Library Innovation Lab](http://librarylab.law.harvard.edu/) and at the [Berkman Center for Internet and Society](https://berkman.harvard.edu/). I’m also the designer at [n+1](http://nplusonemag.com), a Brooklyn-based journal of literature and contemporary criticism.
 
-Go deeper at [my portfolio](http://thisidano.github.io/portfolio).
+Go deeper at [my portfolio](http://thisidano.github.io/projects).
 
 ## More about my recent work.
 It’s an amazing time to be a designer, right? Print and web design are both healthy and full of surprises. These are three of favorite projects from the last twelve months. 
