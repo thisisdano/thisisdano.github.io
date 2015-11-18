@@ -1,0 +1,1 @@
+$(function(){$(".section").each(function(){var e="section-thumbs-"+$(this).attr("id");$(".desc",this).after('<ul id="'+e+'">'),$(".featured-image",this).cycle({speed:"fast",timeout:0,pager:"#"+e,next:$(".featured-image",this),pagerAnchorBuilder:function(e,t){return'<li><a href="#"><img src="'+t.src+'" height="133" /></a></li>'}})})});

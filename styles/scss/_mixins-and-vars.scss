@@ -1,0 +1,45 @@
+/* notes */
+/* 100% = 16px = 1em */
+/* 20px = 1.25em */
+/* 24px = 1.5em */
+
+$grid: 8px; 
+$spacer: $grid * 2; 
+$color-blue: #1553EA;
+$color-pink: #FF0F0F;
+
+
+$width-xmobile: 384px;
+$width-tablet: 748px; 
+$width-desktop: 990px; 	
+$width-wide: 1200px; 	
+
+@mixin respond-mobile {
+	@media only screen and (max-width: $width-tablet - 1) {
+		@content;
+	}
+}
+
+@mixin respond-xmobile {
+	@media only screen and (min-width: $width-xmobile) {
+		@content;
+	}
+}
+
+@mixin respond-tablet {
+	@media only screen and (min-width: $width-tablet) {
+		@content;
+	}
+}
+
+@mixin respond-desktop {
+	@media only screen and (min-width: $width-desktop) {
+		@content;
+	}
+}
+
+@mixin respond-wide {
+	@media only screen and (min-width: $width-wide) {
+		@content;
+	}
+}
