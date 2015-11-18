@@ -2,7 +2,6 @@
 //$ss-social-regular-dir: '../webfonts/';
 //$ss-social-circle-dir: $ss-social-regular-dir;
 
-@import "bourbon";
 @import "meyer-reset.scss";
 @import "mixins-and-vars.scss";
 //@import "../symbolset/symbolset";
@@ -50,74 +49,9 @@ body {
 	overflow-x: hidden;
 }
 
-body.case-study {
-	background-color: black;
-	font-weight: 300;
-	color: white;
-	.section ul.specs li {
-		color: white;
-	}
-	a {
-		text-decoration: none;
-		strong {
-			font-weight: 400;
-			color: $color-blue;
-		}
-	}
-	.section {
-		@include respond-mobile { 
-			border-top: none;
-			margin-top: 0;
-			padding-top: 0;
-		}
-	}
-	@include respond-tablet {
-		.project-title {
-			font-weight: 300;
-			font-size: 2em;
-			line-height: 1.2;
-			strong {
-				font-weight: 700;
-			}
-		}
-	}
-	.project-title  {
-		.tag {
-			display: block;
-			float: left;
-			font-size: 12px;
-			padding: 4px;
-			border: 1px solid;
-			margin-bottom: $grid;
-		}
-		.primary {
-			display: block;
-			clear: both;
-		}
-		.secondary {
-			display: block;
-			clear: both;
-			color: #444;
-		}
-		@include respond-tablet {
-			margin-bottom: 0;
-		}
-	}
-}
 
-#hello { 
-	margin: 0 auto;
-	padding: 0 $grid *2;
-	width: auto;
-	max-width: $width-desktop + ($grid * 4);
-	@include respond-tablet {
-		padding: 0 $grid * 4;
-		max-width: 768px;
-	}
-	@include respond-desktop {
-		padding: 0 $grid * 2;
-		max-width: $width-desktop + ($grid * 4);
-	}
+#hello {
+	background-color: white;
 }
 
 a:link, a:visited { 
@@ -185,14 +119,6 @@ img {
 	height: auto;
 }
 
-img.slide-image {
-	@include respond-tablet {
-		max-width: $width-desktop;
-		max-height: $width-desktop / 2;
-		width: 100% !important;
-		height: auto !important;
-	}
-}
 
 figure {
 	margin: 0;
@@ -202,103 +128,19 @@ figure {
 	}
 }
 
-figure.body {
-	margin-left: -$grid;
-	margin-right: -$grid;
-	margin-top: $grid * 2;
-	margin-bottom: $grid * 2;
-	width: auto !important;
-	@include respond-tablet {
-		margin-bottom: $grid * 4;
-		margin-top: $grid * 4;
-	}
-	img {
-		padding-left: $grid;
-		padding-right: $grid;
-		clear: both;
-	}
-	img + img {
-		margin-top: $grid;
-	}
-	figcaption {
-		padding-left: $grid;
-		padding-right: $grid;
-		padding-top: $grid;
-		clear: both;
-		@include respond-tablet {
-			padding-top: $grid * 2;
-		}
-	}
-}
-
-figure.body img.img-s-6 {
-	@include respond-tablet {
-		width: 50%;
-		margin-top: 0;
-		float: left;
-		clear: none;
-	}
-}
-
-figure.body img.img-m-6 {
-	@include respond-desktop {
-		width: 50%;
-		margin-top: 0;
-		float: left;
-		clear: none;
-	}
-}
-
-figure.body img.img-m-9 {
-	@include respond-desktop {
-		width: 75%;
-		margin-top: 0;
-		//float: left;
-		clear: none;
-	}
-}
-
-
-/*
-strong a, p a, .links a {
-	text-decoration: none;
-	//border-bottom: 5px solid $color-pink;
-    box-shadow: inset 0 -4px 0 $color-pink;
-	padding-bottom: 0;
-	display: inline-block;
-	top: -1px;
-	position: relative;
-	&:hover {
-		border-bottom-color: $color-blue;
-	    box-shadow: inset 0 -5px 0 $color-blue;
-	}
-	&:active {
-		color: black;
-		border-bottom-color: black;
-	    box-shadow: inset 0 -5px 0 black;
-	}
-}
-*/
-
-
-
-/* 
---------------
-
-INTRO + THUMBNAILS
-
---------------
-*/
 
 .intro { 
-	overflow: auto;
-	width: 100%;
-	position: relative;
-	padding-top: $spacer;
-	padding-bottom: $grid * 4;
+	margin: 0 auto;
+	padding: $grid *2;
+	width: auto;
+	max-width: $width-desktop + ($grid * 4);
 	@include respond-tablet {
-		margin: $spacer 0 0 0;
-		padding: $spacer 0 $grid * 6;
+		padding: $grid * 4;
+		max-width: 768px;
+	}
+	@include respond-desktop {
+		padding: $grid * 2;
+		max-width: $width-desktop + ($grid * 4);
 	}
 }
 
@@ -337,450 +179,19 @@ INTRO + THUMBNAILS
 	top: 2px;
 }
 
-.overview {
-	padding-top: $grid * 6;
-}
-
-.overview-item {
-	@include size($size-s);
-	border-top: 1px solid;
-	padding-top: $grid;
-	margin-top: 5px;
-}
-
-.item-date {
-	@include size($size-xs);
-	display: inline-block;
-	position: relative;
-	width: 3.4em;
-	@include respond-tablet {
-		padding-right: .3em;
-		top: -2px;
-	}
-}
-
-.item-tags {
-	padding-left: 3.6em;
-	@include respond-tablet {
-		float: right;
-		overflow: auto;
-		text-align: right;
-		top: -2px;
-		position: relative;
-		padding-left: 0;
-	}
-}
-
-.item-tag {
-	@include size($size-xs);
-	white-space: nowrap;
-	&:after {
-		content: ', ';
-		@include respond-tablet {
-			content: none;
-		}
-	}
-	&:last-child::after {
-		content: none;
-	}
-	& + .item-tag {
-		@include respond-tablet {
-			padding-left: .75em;
-		}
-	}
-}
-
-.section-title {
-	margin-bottom: $grid * 2;
-}
-
-
-
-/* 
---------------
-
-SECTIONS
-
---------------
-*/
-
-.section { 
-	clear: both;
-	//overflow: hidden;
-	padding-top: $grid * 2;
-	@include respond-mobile {
-		border-top: $grid * 5 solid;
-		margin-top: $grid * 3;
-		margin: 0 (-$grid * 2) 0; 
-		padding: $grid * 4 $grid * 2 0;
-	}
-	@include respond-tablet {
-		border-top: 1px solid;
-		margin: 0;
-		padding: $spacer $grid $grid $grid;
-	}
-}
-
-.project-title { 
-	@include respond-mobile {
-		padding-bottom: $grid * 1;
-		font-size: 1.3em;
-	    line-height: 1.3;	
-	    //border-bottom: 1px solid;
-	}
-	/*
-	&:before {
-		content: '';
-		display: block;
-		position: relative;
-		top: -$grid * 2;
-		width: $grid * 2;
-		height: $grid * 2;
-		border-radius: $grid * 3;
-		background-color: $color-blue;
-		left: -1px;
-	}
-	*/
-	@include respond-tablet {
-		border-bottom: none;
-		padding-bottom: 0;
-		float: left;
-		width: 60%;
-		line-height: 1.1;
-		margin-bottom: $grid;
-	}
-} 
-
-.specs { 
-	margin-top: 0;
-	@include respond-tablet {
-		margin-top: 0;
-		float: right;
-		width: 40%;
-		margin-right: -$grid;
-		margin-bottom: $grid;
-	}
-}
-
-.specs li { 
-	@include respond-mobile {
-		display: none;
-		white-space: nowrap;
-		font-size: $size-xs;
-		font-style: italic;
-		&:after {
-			content: ', ';
-		}
-		&:last-child::after {
-			content: none;
-		}
-	}
-	@include respond-tablet {
-		color: $color-blue; 
-		border-bottom: 1px solid;
-		margin-left: $grid * 4;
-		margin-bottom: $grid / 2;
-		padding-bottom: $grid / 2;
-	}
-}
-
-
-.section-content {
-	@include respond-mobile {
-		display: flex;
-		flex-wrap: wrap;
-		.desc {
-			order: -1;
-		}
-	}
-	@include respond-tablet { 
-		margin-top: $grid * 11;
-	}
-	@include respond-desktop { 
-		margin-top: 0;
-	}
-}
-
-.section-body {
-	@include respond-tablet { 
-		margin-top: $grid * 20;
-	}
-	@include respond-desktop { 
-		margin-top: $grid * 25;
-	}
-	p.body {
-		@include respond-tablet {
-			margin-bottom: 1em;
-		}
-		@include respond-desktop {
-			font-size: 1.15em;
-			margin-bottom: 1.3em;
-		}
-	}
-}
-
-h3.body {
-	margin-top: 1.5em;
-    font-size: 1.3em;
-    border-bottom: 1px solid;
-    padding-bottom: .5em;
-    strong {
-	    color: #ffc934;
-    }
-    @include respond-tablet {
-	    font-size: 1em;
-	    margin-top: 2.5em;
-	    font-weight: 700;
-	    border-bottom: none;
-	    padding-bottom: 1em;
-	    float: left;
-	    &:after {
-		    content: '';
-		    display: block;
-		    width: 100%;
-		    height: 8px;
-		    border-bottom: 1px solid;
-	    }
-    }
-    & + p {
-	    @include respond-tablet {
-		    margin-top: 1em;
-	    }
-	    @include respond-desktop {
-		    margin-top: 2em;
-	    }
-   }
-}
-
-h4.body {
-	margin-top: 1.5em;
-	font-weight: $weight-bold;
-	clear: both;
-	@include respond-tablet {
-	    padding-top: 1.5em;
-	    margin-top: 0;
-   		font-size: .8em;
-	}
-	@include respond-desktop {
-	    font-size: .8em;
-	}
-	& + p, 
-	& + ul, 
-	& + ol {
-		margin-top: .25em;
-	}
-	& + ul,
-	& + ol {
-		@include respond-tablet {
-			margin-top: 1em;
-		}
-	}
-}
-
-
-p.body,
-ol.body, 
-ul.body {
-	@include respond-tablet {
-		//font-size: 1.15em;
-	}
-}
-
-p.body {
-	//max-width: 33em;
-}
-
-ol.body, 
-ul.body {
-	margin-top: 1em;
-	padding-left: $grid * 3;
-	li + li {
-		margin-top: .5em;
-	}
-	@include respond-tablet {
-		max-width: 45em;
-		margin-left: $grid * 2;
-		margin-top: 1em;
-	}
-	@include respond-desktop {
-		font-size: 1.15em;
-	}
-	& + p {
-		margin-top: 1em;
-		@include respond-tablet {
-			margin-top: 1.5em;
-		}
-	}
-}
-
-ol.body {
-	counter-reset: myCounter;
-	li {
-		text-indent: -24px;
-	}
-	li:before {
-		content: counter(myCounter)'. ';
-		counter-increment: myCounter;
-		font-weight: $weight-bold;
-		//margin-right: .3em;
-		width: 24px;
-		text-indent: 0;
-		display: inline-block;
-		//font-size: $size-s;
-	}
-	@include respond-desktop {
-		li {
-			text-indent: -32px;
-		}
-		li:before {
-			width: 32px;
-		}
-	}
-
-}
-
-ul.body {
-	padding-left: $grid * 2;
-	li {
-		list-style-type: disc;
-		strong {
-			font-weight: $weight-bold;
-			@include respond-desktop {
-				font-weight: 400;
-			}
-		}
-	}
-	& + h4.body {
-		@include respond-tablet {
-			padding-top: 3em;
-		}
-	}
-}
-
-
-
-.featured-image {
-	clear:both;
-	margin: $grid * 3 0 $grid * 2 0;
-	cursor: pointer;
-	width: 100% !important;
-//	display: none;
-	@include respond-tablet {
-		height: $grid * 50 !important;
-		margin-top: 0;
-		margin-bottom: $spacer * 2;
-	}
-	@include respond-desktop {
-		margin-top: $spacer;
-		height: $grid * 65 !important;
-	}
-}
-
-.slide {
-	position: relative;
-	@include respond-mobile {
-	    position: relative !important;
-	    display: block !important;
-	    opacity: 1 !important;
-	    top: auto !important;
-	    left: auto !important;
-	    width: 100% !important;
-	    height: auto !important;
-	    padding-bottom: $grid * 3;
-	    border-top: 1px solid;
-	    padding-top: $grid;
-	}
-}
-
-span.note {
-	@include size($size-s);
-	//font-size: .8em;
-	font-style: italic;
-	@include respond-mobile {
-		display: block;
-	}
-}
-
-
-figcaption {
-	//@include size($size-xs);
-	font-size: $size-xs;
-	padding-top: $grid;
-	display: block;
-	@include respond-tablet {
-		padding-top: $grid * 2;
-	}
-}
-
-figcaption strong {
-	@include size($size-xs);
-	//font-size: .75em;
-	display: inline-block;
-	width: 2em;
-}
-
-img.uto {
-	max-width: 100%;
-	height: auto;
-	margin-left: auto;
-	display: block;
-}
-
-.desc, 
-p.body {
-	margin-top: $grid * 2;
-	@include respond-tablet {
-		margin-top: 0;
-	}
-}
-
-
-
-.section p span { 
-	display: block;
-	font-size: $size-xs;
-	line-height: 1.5;
-	font-style: italic;
-	margin-top: $grid;
-	@include respond-tablet {
-		margin-top: $spacer;
-	}
-}
-
-.section p + ul { 
-	float: none;
-	width: 100%; 
+html, 
+body {
+	height: 100%;
 	overflow: hidden;
-	margin-bottom: 0;
-}
-.section p + ul li { 
-	float: right;
-	padding: 0 0 0 0;
-	margin-bottom: $grid;
-	width: auto;
-	max-width: 100%;
-	//border: 1px solid; 
 }
 
-.section p + ul li:last-child { 
-	margin-bottom: 0;
+.dots {
+	height: 100%;
+	background-color: white;
+	background-image: url('../../img/dots.svg');
+	background-size: cover;
+	background-position: center top;
 }
-
-.section p + ul li a:link img, .section p + ul li a:visited img { 
-	max-width: 100%;
-	height: auto;
-	display: block;
-	}
-.section p + ul li a:hover img { }
-
-
-/* 
---------------
-
-FOOTER
-
---------------
-*/
 
 #footer { 
 	margin: $grid * 12 $grid $spacer $grid;
@@ -798,29 +209,11 @@ FOOTER
 		}
 	}
 }
+
 #footer p { 
 	margin: 0;
 	font-size: .8em;
 } 
-p.nav { 
-	padding-top: $grid * 2;
-	@include respond-tablet {
-		padding-top: 0;
-		text-align: right;
-	}
-}
-
-.copy {
-	display: none;
-}
-
-/* 
---------------
-
-RESPOND
-
---------------
-*/
 
 @include respond-tablet {
 	body { font-size: 100%; }
@@ -831,61 +224,11 @@ RESPOND
 	.section p { 
 		margin: 0 0 $spacer * 2 0;
 	}
-	h1 { 
-		margin: 104px 0px 120px -56px;
-		float: left;
-	}
-	.section {
-		overflow: hidden;
-		padding: $spacer 0;
-		ul { 
-			margin-right: -7px; 
-		}
-		ul.nav {
-			$nav-width: 75%;
-			width: $nav-width;
-			margin-left: 100% - $nav-width;
-			padding-top: $grid * 7;
-		}
-		h2 {
-			line-height: 1; 
-			margin-bottom: 0; 
-		}
-		ul.specs { 
-			margin-top: 3px; 
-			margin-bottom: $grid * 4;
-		}
-	}
-	.featured-image + p {
-		margin-top: $grid * 4;
-	}
-	#t2t .featured-image {
-		clear: both;
-		height: 200px;
-	} 
-	.section ul.specs li { 
-		transform: rotate(-45deg);
-		margin-left: -$grid * 6;
-		margin-bottom: 0;
-		padding-bottom: 2px;
-		width: $grid * 12; //112px;
-		float: right;
-		font-size: 10px
-	}
-	ul.thumbnails { display: none; }
-	.section p+ul li {
-		margin-bottom: $spacer;
-	}
 	#footer {
 		padding: 0;
 		margin: 0;
 		padding-bottom: $grid * 3;
 	}
-	.intro ul.info li.ss-icon {
-		margin-left: 0;
-		+ li.ss-icon { margin-left: $grid/2;}
-	}
-	//.section p + ul li:first-child { max-width: 50%; }
 }
 
 @include respond-desktop {
@@ -894,162 +237,12 @@ RESPOND
 	}
 	.desc, 
 	p.body { font-size: .8em; }
-	
 	.intro .bio { 
 		margin: 0 0 $spacer * 2 0;
-	}
-	h1 { 
-		margin: 104px 32px 120px -184px;
-		float: left;
 	}
 	.intro ul.info li { 
 		margin-left: 0;
 	}
-	ul.thumbnails { 
-		padding: 54px 0;
-		display: block;
-	}
-	ul.thumbnails img { 
-		height: auto;
-		width: auto;
-	}
-	ul.thumbnails li { 
-		min-height: 288px;
-		max-width: 155px;
-		a img { width: 100%; }
-	}
-	.section { 
-		margin-top: $spacer * 2;
-		padding-bottom: $spacer;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.section h2 { 
-		width: 60%;
-		padding: 14px 0 0 0;
-		margin-bottom: $grid * 6;
-		font-size: 1em;
-		line-height: 1.3; 
-	}
-	.section-content p { 
-		margin: 0;
-		float: none;
-		clear: both;
-		//font-weight: 800;
-		padding-top: $grid * 2;
-	    column-count: 2;
-	    column-gap: $grid * 5;
-	    span {
-	        margin-top: 1px;
-		    //border-top: 1px solid;
-		    padding-top: $grid / 2;
-	    }	
-	}
-	.section .featured-image {
-		display: block; 
-		float: left;
-	}
-	#t2t .featured-image {
-		height: 324px;
-		margin: 0 0 0 0;
-		margin-top: $grid * 5;
-	} 
-		
-	.section ul.specs { 
-		width: auto;
-		margin-right: 0;
-		float: left;
-		padding: $grid 0 0 0;
-		margin-bottom: 0;
-	}
-	.section ul.specs { 
-		margin-top: 0; 
-		padding-left: $grid * 8; 
-		margin-right: -18px; 
-		float: right; 
-	}
-
-	.section ul.specs li { 
-		width: 130px;
-		font-size: 12px;
-		padding-bottom: 0;
-		margin-left: -64px;
-	}
-
-	.section ul.nav {
-		float: right;
-		width: auto;
-		clear: none;
-		overflow: auto;
-		padding-bottom: 0;
-		margin-left: 0;
-		margin-bottom: $spacer;
-		padding-top: $grid;
-		display: none;
-	}
-	.section ul.nav li { 
-		width: auto; 
-		padding: 0 $grid / 4; 
-		&:last-child { padding-right: 0; }
-		a { font-size: 1.2em; }
-	}
-
-	.section + .section ul.nav li {
-		width: auto;
-	}
-
-	div.section:last-child ul.nav li {
-		width: auto;
-	}
-
-	.section ul + ul li a { 
-		width: 4.5em;
-		float: left;
-		margin-right: 0;
-	}
-
-	.section ul + ul li + li a { 
-		margin-left:0;
-	}
-	.section ul + ul li + li + li a { 
-		margin-left: 0;
-	}
-	.specs ul li {
-		float: left;
-		width: 130px;
-	}
-	.section ul.specs li { 
-		transform: rotate(-45deg);
-		margin-left: -64px;
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
-	.section p { clear: left; }
-
-	.section p + ul { 
-		float: none;
-		width: auto; 
-		overflow: auto;
-		margin-top: $grid * 5; 
-	}
-	div.uto { display: none; }
-	.section p + ul li { 
-		padding: 0 10px 10px 0;
-		border: none; 
-		margin-bottom: 0;
-		float: left;
-		height: 133px;
-		width: auto;
-	}
-	.section p + ul li a:link img, .section p + ul li a:visited img { 
-		border: 1px solid transparent;
-		height: 133px;
-		width: auto;
-	}
-	.section p + ul li a:hover img { 
-		border: 1px solid $color-blue;
-	}
-	
 	#footer {
 		padding: $spacer 0; 
 		margin: $grid * 6 0 $grid * 4 0;
