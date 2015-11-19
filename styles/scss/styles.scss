@@ -135,11 +135,11 @@ figure {
 	width: auto;
 	max-width: $width-desktop + ($grid * 4);
 	@include respond-tablet {
-		padding: $grid * 4;
+		padding: $grid * 4 $grid * 4;
 		max-width: 768px;
 	}
 	@include respond-desktop {
-		padding: $grid * 2;
+		padding: $grid * 4 $grid * 2;
 		max-width: $width-desktop + ($grid * 4);
 	}
 }
