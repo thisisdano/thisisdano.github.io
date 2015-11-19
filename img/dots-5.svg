@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
-    <title>dots</title>
+    <title>dots-5</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="dots" sketch:type="MSArtboardGroup">
+        <g id="dots-5" sketch:type="MSArtboardGroup">
             <rect id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="64" height="64"></rect>
-            <circle id="Oval-1-Copy-53" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="9" cy="9" r="9"></circle>
+            <circle id="Oval-1-Copy-53" fill="#F8C423" sketch:type="MSShapeGroup" cx="9" cy="9" r="9"></circle>
             <circle id="Oval-1-Copy-52" fill="#1D59E7" sketch:type="MSShapeGroup" cx="9" cy="41" r="9"></circle>
             <circle id="Oval-1-Copy-141" fill="#1D59E7" sketch:type="MSShapeGroup" cx="41" cy="9" r="9"></circle>
-            <circle id="Oval-1-Copy-139" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="41" cy="41" r="9"></circle>
+            <circle id="Oval-1-Copy-139" fill="#F8C423" sketch:type="MSShapeGroup" cx="41" cy="41" r="9"></circle>
         </g>
     </g>
 </svg>
