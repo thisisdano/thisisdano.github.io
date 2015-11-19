@@ -152,7 +152,7 @@ figure {
 }
 
 .contact {
-	border-top: 1px solid;
+//	border-top: 1px solid;
 	margin-top: $grid;
 	padding-top: $grid;
 	@include respond-tablet {
@@ -165,8 +165,12 @@ figure {
 	@include size($size-xxs);
 	display: inline-block;
 	padding-right: $spacer;
+	@include respond-mobile {
+		display: block;
+		padding-top: $grid / 2;
+	}
 	@include respond-desktop {
-		padding-right: .3em;
+		padding-right: .75em;
 	}
 }
 
