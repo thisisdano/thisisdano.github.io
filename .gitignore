@@ -13,3 +13,4 @@ webfonts
 .codekit-cache
 .sass-cache/
 *.css.map
+_patternlab/
