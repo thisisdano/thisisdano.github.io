@@ -29,7 +29,7 @@ $weight-bold: 700;
 
 
 
-/* 
+/*
 --------------
 
 BASICS
@@ -48,7 +48,7 @@ BASICS
 	}
 }
 
-body { 
+body {
 	margin: 0;
 	background-color: white;
 	color: $color-blue;
@@ -61,11 +61,11 @@ body {
 	background-color: white;
 }
 
-a:link, a:visited { 
+a:link, a:visited {
 	color: $color-pink;
 }
 
-a:hover { 
+a:hover {
 	color: $color-blue;
 }
 
@@ -92,22 +92,22 @@ a.button {
 	}
 }
 
-p { 
+p {
 	margin: 0;
 	clear: both;
 }
 
-em { 
+em {
 	font-style: italic;
 }
 
-h1 { 
-	margin: $grid * 11 auto $grid * 17 auto; 
-	font-weight: normal; 
+h1 {
+	margin: $grid * 11 auto $grid * 17 auto;
+	font-weight: normal;
 	font-size: 2.4em;
 	border-bottom: 3px solid;
-	width: 7.3em; 
-	text-align: center; 
+	width: 7.3em;
+	text-align: center;
 	transform: rotate(-45deg);
 	position: relative;
 	color: rgba(0,0,0,.8);
@@ -136,7 +136,7 @@ figure {
 }
 
 
-.intro { 
+.intro {
 	margin: 0 auto;
 	padding: $grid *2;
 	width: auto;
@@ -190,7 +190,7 @@ figure {
 	top: 2px;
 }
 
-html, 
+html,
 body {
 	height: 100%;
 	overflow: hidden;
@@ -206,7 +206,7 @@ body {
 	//animation: dottyfun 1s linear infinite;
 }
 
-#footer { 
+#footer {
 	margin: $grid * 12 $grid $spacer $grid;
 	&:before {
 		@include respond-mobile {
@@ -223,18 +223,18 @@ body {
 	}
 }
 
-#footer p { 
+#footer p {
 	margin: 0;
 	font-size: .8em;
-} 
+}
 
 @include respond-tablet {
 	body { font-size: 100%; }
-	
+
 	.intro .bio { padding-top: $grid * 4; }
-	
-	.intro .bio, 
-	.section p { 
+
+	.intro .bio,
+	.section p {
 		margin: 0 0 $spacer * 2 0;
 	}
 	#footer {
@@ -245,19 +245,19 @@ body {
 }
 
 @include respond-desktop {
-	body { 
+	body {
 		font-size: 120%;
 	}
-	.desc, 
+	.desc,
 	p.body { font-size: .8em; }
-	.intro .bio { 
+	.intro .bio {
 		margin: 0 0 $spacer * 2 0;
 	}
-	.intro ul.info li { 
+	.intro ul.info li {
 		margin-left: 0;
 	}
 	#footer {
-		padding: $spacer 0; 
+		padding: $spacer 0;
 		margin: $grid * 6 0 $grid * 4 0;
 		font-size: .75em;
 	}
