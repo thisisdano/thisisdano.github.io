@@ -5,6 +5,7 @@
 @import "bourbon";
 @import "meyer-reset.scss";
 @import "mixins-and-vars.scss";
+@import "fonts.scss";
 //@import "../symbolset/symbolset";
 //@import "../symbolset/ss-social-circle";
 
@@ -55,7 +56,15 @@ body {
 	margin: 0;
 	background-color: white;
 	color: $color-blue;
-	font: 93%/1.55 'Roboto', sans-serif;
+	font: 91%/1.55 '18Franklin-webfont',
+                      system,
+                      -apple-system,
+                      BlinkMacSystemFont,
+                      'Roboto',
+                      'Helvetica Neue',
+                      'Helvetica',
+                      'Arial',
+                      sans-serif;
 	overflow-x: hidden;
 }
 
@@ -383,6 +392,13 @@ INTRO + THUMBNAILS
 	@include respond-tablet {
 		padding-right: .3em;
 		top: -2px;
+	}
+}
+
+.item-title {
+	position: relative;
+	@include respond-tablet {
+		top: -1px;
 	}
 }
 
@@ -917,7 +933,7 @@ RESPOND
 
 @include respond-desktop {
 	body {
-		font-size: 120%;
+		font-size: 115%;
 	}
 	.desc,
 	p.body { font-size: .8em; }
