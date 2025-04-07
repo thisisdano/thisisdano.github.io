@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/thisisdano/thisisdano.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.10.0",
+    "browser-sync": "^3.0.4",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-jshint": "^2.1.0",
