@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Dano's super-fun github website",
   "main": "index.md",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thisisdano/thisisdano.github.io.git"
@@ -32,7 +29,8 @@
     "watch:eleventy": "npx eleventy --serve",
     "build:eleventy": "npx eleventy",
     "start": "npx npm-run-all build:sass --parallel watch:*",
-    "build": "npx npm-run-all build:*"
+    "build": "npx npm-run-all build:*",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/thisisdano.github.io/"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
