@@ -1,67 +1,14 @@
 /* Eric Meyer's Most Excellent CSS Reset */
 /* v1.0 | 20080212 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -71,20 +18,16 @@ td {
   background: transparent;
 }
 
-ul li,
-ol li {
+ul li, ol li {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -118,17 +61,13 @@ table {
   font-family: "18Franklin-webfont";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/18Franklin-Regular.woff2") format("woff2"),
-    url("/fonts/18Franklin-Regular.woff") format("woff"),
-    url("/fonts/18Franklin-Regular.ttf") format("truetype");
+  src: url("/fonts/18Franklin-Regular.woff2") format("woff2"), url("/fonts/18Franklin-Regular.woff") format("woff"), url("/fonts/18Franklin-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "18Franklin-webfont";
   font-style: italic;
   font-weight: 400;
-  src: url("/fonts/18Franklin-Italic.woff2") format("woff2"),
-    url("/fonts/18Franklin-Italic.woff") format("woff"),
-    url("/fonts/18Franklin-Italic.ttf") format("truetype");
+  src: url("/fonts/18Franklin-Italic.woff2") format("woff2"), url("/fonts/18Franklin-Italic.woff") format("woff"), url("/fonts/18Franklin-Italic.ttf") format("truetype");
 }
 :root {
   --grid: 8px;
@@ -173,8 +112,7 @@ body {
   margin: 0;
   background-color: white;
   color: var(--color-blue);
-  font: 91%/1.55 "18Franklin-webfont", system, -apple-system, BlinkMacSystemFont,
-    "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 91%/1.55 "18Franklin-webfont", system, -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   overflow-x: hidden;
 }
 
@@ -237,7 +175,7 @@ body.case-study .project-title .secondary {
   margin: 0 auto;
   padding: 0 calc(var(--grid) * 2);
   width: auto;
-  max-width: var(--width-desktop);
+  max-width: var(--width-desktop)calc(var(--grid) * 4);
 }
 @media only screen and (min-width: 747px) {
   #hello {
@@ -248,7 +186,7 @@ body.case-study .project-title .secondary {
 @media only screen and (min-width: 990px) {
   #hello {
     padding: 0 calc(var(--grid) * 2);
-    max-width: var(--width-desktop) calc(var(--grid) * 4);
+    max-width: calc(var(--width-desktop) + var(--grid) * 4);
   }
 }
 
@@ -766,14 +704,11 @@ h4.body {
     font-size: 0.8em;
   }
 }
-h4.body + p,
-h4.body + ul,
-h4.body + ol {
+h4.body + p, h4.body + ul, h4.body + ol {
   margin-top: 0.25em;
 }
 @media only screen and (min-width: 747px) {
-  h4.body + ul,
-  h4.body + ol {
+  h4.body + ul, h4.body + ol {
     margin-top: 1em;
   }
 }

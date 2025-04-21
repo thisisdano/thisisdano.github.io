@@ -125,7 +125,7 @@ body.case-study {
   }
   @include respond-desktop {
     padding: 0 calc(var(--grid) * 2);
-    max-width: var(--width-desktop) + calc(var(--grid) * 4);
+    max-width: calc(var(--width-desktop) + calc(var(--grid) * 4));
   }
 }
 
