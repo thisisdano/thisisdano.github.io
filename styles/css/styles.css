@@ -112,7 +112,8 @@ body {
   margin: 0;
   background-color: white;
   color: var(--color-blue);
-  font: 91%/1.55 "18Franklin-webfont", system, -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 91%/1.55 "Public Sans", system, -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-optical-sizing: auto;
   overflow-x: hidden;
 }
 
@@ -369,7 +370,7 @@ strong a, p a, .links a {
   background-size: 8px 8px;
   background-position: top top;
   background-repeat: repeat;
-  background-image: url("../../img/dots.svg");
+  background-image: url("../../img/meta/dots.svg");
 }
 
 /*
