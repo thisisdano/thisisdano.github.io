@@ -1,0 +1,24 @@
+---
+layout: base.liquid
+---
+
+{{ content  }}
+
+<footer id="footer">
+  <p class="copy">
+    Site contents by Dano Williams,
+    <script type="text/javascript">
+      now = new Date();
+      theYear = now.getYear();
+      if (theYear < 1900) theYear = theYear + 1900;
+      document.write(theYear);
+    </script>
+  </p>
+  <p>&lt;/pdx&gt; Hand-coded in Portland.</p>
+  <p>
+    Typeface:
+    <a href="https://github.com/uswds/public-sans">Public Sans</a>
+  </p>
+  <p class="nav"><a href="#hello">top</a></p>
+</footer>
+<script type="text/javascript" src="/js/fastclick.js"></script>
