@@ -7,4 +7,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("styles/css");
+  eleventyConfig.addPassthroughCopy("projects/berkman/img");
+  eleventyConfig.addPassthroughCopy("browserconfig.xml");
 }
