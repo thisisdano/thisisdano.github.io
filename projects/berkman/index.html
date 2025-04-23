@@ -1,188 +1,403 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en">
+---
+layout: portfolio.liquid
+title: Berkman case study by Dano Williams
+description: "A case study of The Berkman Center for Internet & Society’s prospectus data visualization"
+body: "case-study"
+---
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="keywords" content="portfolio, Dan O Williams, design, art direction, north adams, portland" />
-		<meta name="description" content="A case study of The Berkman Center for Internet & Society’s prospectus data visualization" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<title>The Berkman Center | Project Case Study | Dano Williams</title>
+<div class="intro">
+  <h1>Dano Williams</h1>
+  <p class="page-dek">
+    <a href="http://thisisdano.github.io"><strong>Dano Williams</strong></a>
+    is a designer in North Adams, Massachusetts and Portland, Oregon.
+  </p>
+</div>
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+<section class="sections">
+  <!-- berkman -->
+  <div class="section" id="berkman-center">
+    <h2 class="project-title">
+      <strong class="tag">Case study</strong>
+      <span class="primary"
+        >The Berkman Center for Internet&nbsp;&amp;&nbsp;Society
+      </span>
+      <span class="secondary">History data visualization</span>
+    </h2>
+    <!-- specs -->
+    <ul class="specs">
+      <li>2015</li>
+      <li>printed folder</li>
+      <li>data visualization</li>
+    </ul>
+    <div class="section-body">
+      <h3 class="body">Project Overview</h3>
+      <h4 class="body">The Client</h4>
+      <p class="body">
+        <strong></strong
+        ><a href="http://berkman.harvard.edu"
+          >The Berkman Center for Internet &amp; Society</a
+        >
+        is a university center based at Harvard University. Since 1997, the
+        Center has studied the legal and sociopolitical impact of the Internet.
+        It was developed to have an entrepreneurial focus and values active
+        engagement with the Internet — projects and code rather than position
+        papers and passive research. The strength of the Center is its network
+        of fellows and associates who come to the Center not for compensation,
+        but for the opportunity to learn from each other and pursue their
+        individual and collaborative projects.
+      </p>
 
-		<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/styles/css/styles.css" type="text/css" />
+      <h4 class="body">Project Objectives</h4>
+      <p class="body">
+        Create a printed prospectus to communicate the history and vitality of
+        the Center to potential donors, fellows, and interested students. The
+        attention-grabbing showpiece of this prospectus would be a visualization
+        of the many important contributions the Center has made to the history
+        of the Internet, told through the story of the Center’s 20 years of
+        independent projects.
+      </p>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/smooth-scroll.js"></script>
-		<script type="text/javascript" src="/js/jquery.cycle/jquery.cycle.all.min.js"></script>
-		<script type="text/javascript" src="/js/slider.js"></script>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-18681245-1']);
-			_gaq.push(['_trackPageview']);
+      <h4 class="body">Initial Constraints</h4>
+      <ul class="body">
+        <li><strong>Material:</strong> Printed piece</li>
+        <li>
+          <strong>Limited data set:</strong> the only data common to every
+          project was duration, description, and a rough taxonomy of type.
+          Collecting additional data would be time consuming and its vetting
+          could be problematic.
+        </li>
+        <li>
+          <strong>Institutional constraints:</strong> Non-hierarchy,
+          even-handedness, fairness, modesty. Each project has its own
+          stakeholders with their own objectives and priorities.
+        </li>
+      </ul>
 
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.WB_wombat_location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-	</head>
+      <h4 class="body">The Center’s Vision</h4>
+      <p class="body">
+        The Center came to the project with the idea of presenting its projects
+        as a network of subway lines (a transit graph), with three levels of
+        representation: projects (stops); subject categories (lines); and
+        pedagogic modes (geographic areas).
+      </p>
 
-	<body class="case-study">
-		<div id="hello">
+      <h3 class="body"><strong>1: </strong>Discovery and story analysis</h3>
+      <p class="body">
+        I held a number of discussions with the communications team and also
+        attended larger staff meetings to get a sense of the Center: its
+        organizational culture, tone, decision-making process, and self image.
+        It quickly became clear that the academic and research strengths of the
+        Center — multiple autonomous teams with their own members and
+        priorities, and a widely dispersed, collaborative, non-hierarchical
+        organizational structure — made central decision making challenging. It
+        was difficult for the Center to define a coherent idea of itself —
+        almost every definition had caveats and exceptions. The Center was
+        resistant to organizational self-definition as limited and limiting.
+        Identity was an emergent property, only visible in the aggregate.
+      </p>
+      <p class="body">
+        It felt important that the visualization make this aggregate identity
+        explicit, and that what emerged could form a motif for the rest of the
+        prospectus. I imagined the Center as something that you could only see
+        through action and implication. Like negative space, or the concentric
+        rings radiating from a stone dropped in water — the Center was both the
+        stone and the rings, the literal center defined by its dynamic effect
+        through time. Concentric rings, thus, are a natural indicator of time as
+        well as dynamism. This was both a good story and a useful graph.
+      </p>
+      <p class="body">
+        The Center’s initial transit graph metaphor had a few key weaknesses:
+      </p>
+      <ol class="body">
+        <li>
+          The transit graph metaphor is very strong and distinctive. Without a
+          strong correlation between the data and transit, the metaphor can
+          overwhelm and appear gimmicky.
+        </li>
+        <li>
+          Our primary data were duration, and the transit graph doesn’t
+          communicate duration as easily as taxonomy and sequence.
+        </li>
+        <li>
+          The taxonomical data were pretty squishy. A transit graph is defined
+          not only its lines but its intersections — how our projects were
+          categorized would form the shape of the lines and intersections, and
+          these relationships were subject to possibly endless discussion. The
+          core structure should be something more objective.
+        </li>
+        <li>
+          The transit graph carries the idea of sunk infrastructure — lines that
+          are built and fixed in time. We needed to show that the Center is
+          alive and growing.
+        </li>
+      </ol>
+      <p class="body">
+        We agreed that we wanted our story to focus on the continued dynamism of
+        the Center and how each project is both an example of that dynamism and
+        a component of a larger dynamic. We agreed to proceed with a radial
+        timeline, with projects shown as rays.
+      </p>
 
-		<!-- Intro + Bio -->
-		<div class="intro">
-			<h1>Dano Williams</h1>
-			<p class="page-dek"><a href="http://thisisdano.github.io"><strong>Dano Williams</strong></a> is a designer in North Adams, Massachusetts and Portland, Oregon.</p>
-		</div>
+      <h3 class="body"><strong>2: </strong>Initial Sketches</h3>
+      <p class="body">
+        Sketching revealed that the radial graph couldn’t have a strong
+        background of its own. If it displayed with too much contrast, its
+        circularity was a distraction, reading as a plate, record, or compact
+        disc, self-contained rather than extending into the future.
+      </p>
 
-		<section class="sections">
+      <figure class="body wide">
+        <img
+          src="/projects/berkman/img/berkman-dv-sketch-1.jpg"
+          alt="berkman sketch 1"
+          width="750"
+          height="1000"
+          class="img-xs-12 img-s-6"
+        />
+        <img
+          src="/projects/berkman/img/berkman-dv-sketch-2.jpg"
+          alt="berkman sketch 2"
+          width="750"
+          height="1000"
+          class="img-xs-12 img-s-6"
+        />
+        <figcaption>Initial sketches for the data visualization</figcaption>
+      </figure>
 
-			<!-- berkman -->
-			<div class="section" id="berkman-center">
-				<h2 class="project-title">
-					<strong class="tag">Case study</strong>
-					<span class="primary">The Berkman Center for Internet&nbsp;&amp;&nbsp;Society </span>
-					<span class="secondary">History data visualization</span></h2>
-				<!-- specs -->
-				<ul class="specs">
-					<li>2015</li>
-					<li>printed folder</li>
-					<li>data visualization</li>
-				</ul>
-				<div class="section-body">
-					<h3 class="body">Project Overview</h3>
-					<h4 class="body">The Client</h4>
-					<p class="body"><strong></strong><a href="http://berkman.harvard.edu">The Berkman Center for Internet &amp; Society</a> is a university center based at Harvard University. Since 1997, the Center has studied the legal and sociopolitical impact of the Internet. It was developed to have an entrepreneurial focus and values active engagement with the Internet — projects and code rather than position papers and passive research. The strength of the Center is its network of fellows and associates who come to the Center not for compensation, but for the opportunity to learn from each other and pursue their individual and collaborative projects.</p>
+      <p class="body">
+        Strong markers (i.e. dots) at the end of each project ray also added a
+        level of complexity that might need to be explained. A strong marker at
+        the beginning seemed clear enough as the indication of the start of a
+        project, but did we need a distinction between a beginning marker and an
+        end marker? What about projects that are ongoing? Would they have no end
+        marker or a different kind? Markers at the beginning but not the end had
+        the unpleasant effect of reversing the ray’s direction, evoking a sperm
+        cell moving inward rather than energy radiating outward. The markers
+        also began to define a cartesian field of their own that could
+        potentially distract from the project rays. Markers provided a good
+        anchor for a pointer, and an obvious focal point for the viewer, but
+        their presence required balance.
+      </p>
+      <p class="body">
+        It was going to be difficult to get all the projects and their content
+        on the page and keep the focus clear.
+      </p>
 
-					<h4 class="body">Project Objectives</h4>
-					<p class="body">Create a printed prospectus to communicate the history and vitality of the Center to potential donors, fellows, and interested students. The attention-grabbing showpiece of this prospectus would be a visualization of the many important contributions the Center has made to the history of the Internet, told through the story of the Center’s 20 years of independent projects.</p>
+      <h3 class="body">
+        <strong>3: </strong>First pass, feedback, and refinement
+      </h3>
+      <p class="body">
+        I was pleased with the first refined pass of the visualization. It had a
+        good overall balance, the project subject and pedagogical modes were
+        both clear and neither overwhelmed the other. We had a consistent
+        treatment for markers (white on the start side and filled with the
+        subject color on the end side). The overall piece had what you might
+        call “sparkle” or inviting contrast. The visualization motif also worked
+        well as a cover motif, abstract but energetic and evocative.
+      </p>
 
-					<h4 class="body">Initial Constraints</h4>
-					<ul class="body">
-						<li><strong>Material:</strong> Printed piece</li>
-						<li><strong>Limited data set:</strong> the only data common to every project was duration, description, and a rough taxonomy of type. Collecting additional data would be time consuming and its vetting could be problematic.</li>
-						<li><strong>Institutional constraints:</strong> Non-hierarchy, even-handedness, fairness, modesty. Each project has its own stakeholders with their own objectives and priorities.</li>
-					</ul>
+      <figure class="body wide">
+        <img
+          src="/projects/berkman/img/berkman-prospectus-dv-P1.jpg"
+          alt="berkman final printed visualization"
+          width="982"
+          height="1329"
+          class="img-xs-12 img-m-6"
+        />
+        <img
+          src="/projects/berkman/img/berkman-prospectus-dv-P1-full.jpg"
+          alt="berkman final printed visualization"
+          width="2000"
+          height="1329"
+          class="img-m-6"
+        />
+        <figcaption>
+          The first pass of the visualization; both alone and in combination
+          with the prospectus cover
+        </figcaption>
+      </figure>
 
-					<h4 class="body">The Center’s Vision</h4>
-					<p class="body">The Center came to the project with the idea of presenting its projects as a network of subway lines (a transit graph), with three levels of representation: projects (stops); subject categories (lines); and pedagogic modes (geographic areas).</p>
+      <p class="body">
+        The first round of feedback revealed some weaknesses in the
+        visualization and a clarification of the Center’s institutional
+        priorities.
+      </p>
+      <p class="body">
+        The two levels of categorization (subject and pedagogic mode) were
+        causing internal anxiety at the Center over their definition and
+        application. They could not agree on each project’s subject
+        categorization and decided that the subject level would have to be
+        scrapped. While this allowed us to minimize or remove the mode indicator
+        in the background color, it also meant losing a key project
+        differentiator: the color in the project name. Since projects could
+        exist in different modes, a single color couldn’t easily represent
+        multiple modes. Blended colors (green as a mix of yellow and blue) were
+        not only ambiguous, but made the visualization look like a rainbow and
+        felt juvenile. A multicolor title wasn’t a good option.
+      </p>
+      <p class="body">
+        The Center decided that each project needed to have a description, and
+        none of them would include milestones. While there was a visual benefit
+        to different levels of project treatment, as well as limited space for
+        additional text, it was critically important to the Center that each
+        project be treated similarly. Favoritism, even at the level of visual
+        distinction, was going to be a political problem. I would need to get
+        more copy on the visualization, make the projects similar, and provide
+        contrast in another way.
+      </p>
+      <p class="body">
+        Continuing projects were also a problem. They weren’t reading clearly,
+        and there was an ambiguity between continuing projects (those that
+        extended to the circumference of the disc) and the label pointers (the
+        dotted lines that connected a project name/description to a ray). The
+        pointers looked more like continuations because they extended past the
+        circumference of the disc.
+      </p>
+      <p class="body">
+        And finally, the Center needed to include a small piece of explanatory
+        text somewhere on the image to explain the context of the pedagogical
+        modes.
+      </p>
+      <p class="body">
+        This feedback introduced a few major new constraints and content
+        elements, the effect of which could be to flatten the contrast of the
+        piece and reduce it to a cloud of text. Back to the drawing board.
+      </p>
 
-					<h3 class="body"><strong>1: </strong>Discovery and story analysis</h3>
-					<p class="body">I held a number of discussions with the communications team and also attended larger staff meetings to get a sense of the Center: its organizational culture, tone, decision-making process, and self image. It quickly became clear that the academic and research strengths of the Center — multiple autonomous teams with their own members and priorities, and a widely dispersed, collaborative, non-hierarchical organizational structure — made central decision making challenging. It was difficult for the Center to define a coherent idea of itself — almost every definition had caveats and exceptions. The Center was resistant to organizational self-definition as limited and limiting. Identity was an emergent property, only visible in the aggregate.</p>
-					<p class="body">It felt important that the visualization make this aggregate identity explicit, and that what emerged could form a motif for the rest of the prospectus. I imagined the Center as something that you could only see through action and implication. Like negative space, or the concentric rings radiating from a stone dropped in water — the Center was both the stone and the rings, the literal center defined by its dynamic effect through time. Concentric rings, thus, are a natural indicator of time as well as dynamism. This was both a good story and a useful graph.</p>
-					<p class="body">The Center’s initial transit graph metaphor had a few key weaknesses:</p>
-					<ol class="body">
-						<li>The transit graph metaphor is very strong and distinctive. Without a strong correlation between the data and transit, the metaphor can overwhelm and appear gimmicky.</li>
-						<li>Our primary data were duration, and the transit graph doesn’t communicate duration as easily as taxonomy and sequence.</li>
-						<li>The taxonomical data were pretty squishy. A transit graph is defined not only its lines but its intersections — how our projects were categorized would form the shape of the lines and intersections, and these relationships were subject to possibly endless discussion. The core structure should be something more objective.</li>
-						<li>The transit graph carries the idea of sunk infrastructure — lines that are built and fixed in time. We needed to show that the Center is alive and growing.</li>
-					</ol>
-					<p class="body">We agreed that we wanted our story to focus on the continued dynamism of the Center and how each project is both an example of that dynamism and a component of a larger dynamic. We agreed to proceed with a radial timeline, with projects shown as rays.</p>
+      <h3 class="body">
+        <strong>4: </strong>Second pass (flexibility and rigidity)
+      </h3>
+      <p class="body">
+        We needed to get a lot more text on the page and present each project
+        with less individual distinction. Neither of these new constraints were
+        negotiable.
+      </p>
+      <p class="body">
+        On the bright side, the visualization told the story well, and the motif
+        successfully unified the entire prospectus. I needed to strengthen the
+        motif and establish visual hierarchy through other means. If the concept
+        of the visualization could influence the direction of the cover motif,
+        could the direction of the cover motif feed back and influence the
+        visualization?
+      </p>
+      <p class="body">
+        Part of the cover’s strength comes from its simplicity — the strength of
+        the rays against an empty background. I could apply this to the
+        visualization by thickening the project rays and reducing the visual
+        weight of the background graph. This solved a number of the new
+        constraints by strengthening the motif, removing the ambiguity of the
+        markers, and allowing continuing projects to extend beyond the
+        circumference of the graph — a clearer indication of their continued
+        activity.
+      </p>
+      <p class="body">
+        My experience in book design indicated that it would be possible to
+        print the visualization graph as rich black on 100%K black. The rays
+        could be solid lines for single pedagogic modes, and alternating square
+        dashes for multiple modes. Every project, then, would be a single ray
+        with a similar treatment. Trial and error revealed a suite of colors
+        that worked well both as single colors and alternating combinations. We
+        also had the opportunity to add new patterns for periods of project
+        hiatus (a thin dotted line) and for instances when the project spun off
+        from the Center (a wide-dashed white-to-rich-black gradient line that
+        extended outside the graph to the edge of the page).
+      </p>
+      <p class="body">
+        The new ray treatment had great energy. Now I could contrast the strong
+        diagonals of the rays with a rigid grid of project text. This difference
+        in structure could provide the balance the piece needed. The final touch
+        was the “service ribbon,” a thin line with the same mode pattern as the
+        project ray that appears next to the project name and description to
+        connect it visually to the project ray and allow a faster read of the
+        project’s mode.
+      </p>
 
-					<h3 class="body"><strong>2: </strong>Initial Sketches</h3>
-					<p class="body">Sketching revealed that the radial graph couldn’t have a strong background of its own. If it displayed with too much contrast, its circularity was a distraction, reading as a plate, record, or compact disc, self-contained rather than extending into the future. </p>
+      <figure class="body wide">
+        <img
+          src="/projects/berkman/img/berkman-prospectus-dv-P2.jpg"
+          alt="the final visualization that we sent to the printer"
+          width="750"
+          height="1000"
+          class="img-xs-12 img-m-9"
+        />
+        <figcaption>The visualization that we sent to the printer</figcaption>
+      </figure>
 
-					<figure class="body wide">
-						<img src="img/berkman-dv-sketch-1.jpg" alt="berkman sketch 1" width="750" height="1000" class="img-xs-12 img-s-6"/>
-						<img src="img/berkman-dv-sketch-2.jpg" alt="berkman sketch 2" width="750" height="1000" class="img-xs-12 img-s-6" />
-						<figcaption>Initial sketches for the data visualization</figcaption>
-					</figure>
+      <p class="body">
+        This treatment got great feedback from the Center, so it was off to
+        print!
+      </p>
 
-					<p class="body">Strong markers (i.e. dots) at the end of each project ray also added a level of complexity that might need to be explained. A strong marker at the beginning seemed clear enough as the indication of the start of a project, but did we need a distinction between a beginning marker and an end marker? What about projects that are ongoing? Would they have no end marker or a different kind? Markers at the beginning but not the end had the unpleasant effect of reversing the ray’s direction, evoking a sperm cell moving inward rather than energy radiating outward. The markers also began to define a cartesian field of their own that could potentially distract from the project rays. Markers provided a good anchor for a pointer, and an obvious focal point for the viewer, but their presence required balance.</p>
-					<p class="body">It was going to be difficult to get all the projects and their content on the page and keep the focus clear.</p>
+      <h3 class="body"><strong>5: </strong>Adapting to print</h3>
+      <p class="body">
+        When the first proofs returned form the printer, everything looked
+        beautiful — <em>except</em> that the gridlines completely vanished and
+        the project descriptions were printing with a nearly unreadable line
+        screen! Clearly, this wasn’t acceptable.
+      </p>
+      <p class="body">
+        Further discussion with the printer revealed that the black-on-black
+        printing wasn’t going to work, despite my experience otherwise. But it
+        is rarely in your favor to go against your printer’s recommendations —
+        having a representative on your side at the printer who believes in the
+        project and knows how to make it perform at its best is more important
+        than almost any other consideration. The Center didn’t have the budget
+        to perform the battery of press tests required to be certain. The
+        printer suggested not only changing the gridlines to gray, but
+        increasing their weight, and also lightening the color of the project
+        descriptions.
+      </p>
+      <p class="body">
+        Thus I found myself in a situation not unlike that of Jørgon Leth in his
+        <cite>The Five Obstructions</cite>, where Leth is tasked with directing
+        a simple story while a sadistic Lars von Trier adds increasingly strange
+        and challenging structural restrictions!
+      </p>
+      <p class="body">
+        At this point, though, it was important to trust the printer and trust
+        that I could make the final balance work. In the end, after following
+        the printer’s guidelines and balancing the relative weights of the
+        gridlines, rays, and descriptions, it hit the press and worked!
+      </p>
 
-					<h3 class="body"><strong>3: </strong>First pass, feedback, and refinement</h3>
-					<p class="body">I was pleased with the first refined pass of the visualization. It had a good overall balance, the project subject and pedagogical modes were both clear and neither overwhelmed the other. We had a consistent treatment for markers (white on the start side and filled with the subject color on the end side). The overall piece had what you might call “sparkle” or inviting contrast. The visualization motif also worked well as a cover motif, abstract but energetic and evocative. </p>
+      <figure class="body wide">
+        <img
+          src="/projects/berkman/img/berkman-prospectus-dv-final.jpg"
+          alt="berkman final printed visualization"
+          width="982"
+          height="1329"
+          class="img-xs-12 img-m-9"
+        />
+        <img
+          src="/projects/berkman/img/berkman-prospectus-dv-final-full.jpg"
+          alt="berkman final printed visualization"
+          width="2000"
+          height="1329"
+          class="img-xs-12"
+        />
+        <figcaption>The final printed visualization</figcaption>
+      </figure>
 
-					<figure class="body wide">
-						<img src="img/berkman-prospectus-dv-P1.jpg" alt="berkman final printed visualization" width="982" height="1329" class="img-xs-12 img-m-6"/>
-						<img src="img/berkman-prospectus-dv-P1-full.jpg" alt="berkman final printed visualization" width="2000" height="1329" class="img-m-6"/>
-						<figcaption>The first pass of the visualization; both alone and in combination with the prospectus cover</figcaption>
-					</figure>
+      <h3 class="body"><strong>6: </strong>Conclusion</h3>
+      <p class="body">
+        Design often comes down to balance — visual balance, of course, but also
+        a balance between expectations and practicalities, and the complete
+        matrix of strengths and weaknesses that determines the overall shape of
+        design. Design thinking doesn’t set out to make everyone happy, rather
+        to strike the best balance between the needs of each class of
+        stakeholder — client, user, and fabricator. While the user is the most
+        important of the three, the constraints set by the other two can’t be
+        ignored. There can be disagreements along the way, but the most
+        important through line is a story that makes sense to the client,
+        appeals to a user, and can be built by a fabricator. In the case of the
+        Berkman Center, their dynamic history suggested the shape of a story
+        that’s only gotten stronger when faced with multiple, overlapping
+        constraints.
+      </p>
+      <p class="body">That’s a success story.</p>
 
-					<p class="body">The first round of feedback revealed some weaknesses in the visualization and a clarification of the Center’s institutional priorities.</p>
-					<p class="body">The two levels of categorization (subject and pedagogic mode) were causing internal anxiety at the Center over their definition and application. They could not agree on each project’s subject categorization and decided that the subject level would have to be scrapped. While this allowed us to minimize or remove the mode indicator in the background color, it also meant losing a key project differentiator: the color in the project name. Since projects could exist in different modes, a single color couldn’t easily represent multiple modes. Blended colors (green as a mix of yellow and blue) were not only ambiguous, but made the visualization look like a rainbow and felt juvenile. A multicolor title wasn’t a good option.</p>
-					<p class="body">The Center decided that each project needed to have a description, and none of them would include milestones. While there was a visual benefit to different levels of project treatment, as well as limited space for additional text, it was critically important to the Center that each project be treated similarly. Favoritism, even at the level of visual distinction, was going to be a political problem. I would need to get more copy on the visualization, make the projects similar, and provide contrast in another way.</p>
-					<p class="body">Continuing projects were also a problem. They weren’t reading clearly, and there was an ambiguity between continuing projects (those that extended to the circumference of the disc) and the label pointers (the dotted lines that connected a project name/description to a ray). The pointers looked more like continuations because they extended past the circumference of the disc.</p>
-					<p class="body">And finally, the Center needed to include a small piece of explanatory text somewhere on the image to explain the context of the pedagogical modes.</p>
-					<p class="body">This feedback introduced a few major new constraints and content elements, the effect of which could be to flatten the contrast of the piece and reduce it to a cloud of text. Back to the drawing board.</p>
-
-					<h3 class="body"><strong>4: </strong>Second pass (flexibility and rigidity)</h3>
-					<p class="body">We needed to get a lot more text on the page and present each project with less individual distinction. Neither of these new constraints were negotiable.</p>
-					<p class="body">On the bright side, the visualization told the story well, and the motif successfully unified the entire prospectus. I needed to strengthen the motif and establish visual hierarchy through other means. If the concept of the visualization could influence the direction of the cover motif, could the direction of the cover motif feed back and influence the visualization?</p>
-					<p class="body">Part of the cover’s strength comes from its simplicity — the strength of the rays against an empty background. I could apply this to the visualization by thickening the project rays and reducing the visual weight of the background graph. This solved a number of the new constraints by strengthening the motif, removing the ambiguity of the markers, and allowing continuing projects to extend beyond the circumference of the graph — a clearer indication of their continued activity.</p>
-					<p class="body">My experience in book design indicated that it would be possible to print the visualization graph as rich black on 100%K black. The rays could be solid lines for single pedagogic modes, and alternating square dashes for multiple modes. Every project, then, would be a single ray with a similar treatment. Trial and error revealed a suite of colors that worked well both as single colors and alternating combinations. We also had the opportunity to add new patterns for periods of project hiatus (a thin dotted line) and for instances when the project spun off from the Center (a wide-dashed white-to-rich-black gradient line that extended outside the graph to the edge of the page).</p>
-					<p class="body">The new ray treatment had great energy. Now I could contrast the strong diagonals of the rays with a rigid grid of project text. This difference in structure could provide the balance the piece needed. The final touch was the “service ribbon,” a thin line with the same mode pattern as the project ray that appears next to the project name and description to connect it visually to the project ray and allow a faster read of the project’s mode.</p>
-
-					<figure class="body wide">
-						<img src="img/berkman-prospectus-dv-P2.jpg" alt="the final visualization that we sent to the printer" width="750" height="1000" class="img-xs-12 img-m-9"/>
-						<figcaption>The visualization that we sent to the printer</figcaption>
-					</figure>
-
-					<p class="body">This treatment got great feedback from the Center, so it was off to print!</p>
-
-					<h3 class="body"><strong>5: </strong>Adapting to print</h3>
-					<p class="body">When the first proofs returned form the printer, everything looked beautiful — <em>except</em> that the gridlines completely vanished and the project descriptions were printing with a nearly unreadable line screen! Clearly, this wasn’t acceptable.</p>
-					<p class="body">Further discussion with the printer revealed that the black-on-black printing wasn’t going to work, despite my experience otherwise. But it is rarely in your favor to go against your printer’s recommendations — having a representative on your side at the printer who believes in the project and knows how to make it perform at its best is more important than almost any other consideration. The Center didn’t have the budget to perform the battery of press tests required to be certain. The printer suggested not only changing the gridlines to gray, but increasing their weight, and also lightening the color of the project descriptions.</p>
-					<p class="body">Thus I found myself in a situation not unlike that of Jørgon Leth in his <cite>The Five Obstructions</cite>, where Leth is tasked with directing a simple story while a sadistic Lars von Trier adds increasingly strange and challenging structural restrictions!</p>
-					<p class="body">At this point, though, it was important to trust the printer and trust that I could make the final balance work. In the end, after following the printer’s guidelines and balancing the relative weights of the gridlines, rays, and descriptions, it hit the press and worked!</p>
-
-					<figure class="body wide">
-						<img src="img/berkman-prospectus-dv-final.jpg" alt="berkman final printed visualization" width="982" height="1329" class="img-xs-12 img-m-9"/>
-						<img src="img/berkman-prospectus-dv-final-full.jpg" alt="berkman final printed visualization" width="2000" height="1329" class="img-xs-12"/>
-						<figcaption>The final printed visualization</figcaption>
-					</figure>
-
-					<h3 class="body"><strong>6: </strong>Conclusion</h3>
-					<p class="body">Design often comes down to balance — visual balance, of course, but also a balance between expectations and practicalities, and the complete matrix of strengths and weaknesses that determines the overall shape of design. Design thinking doesn’t set out to make everyone happy, rather to strike the best balance between the needs of each class of stakeholder — client, user, and fabricator. While the user is the most important of the three, the constraints set by the other two can’t be ignored. There can be disagreements along the way, but the most important through line is a story that makes sense to the client, appeals to a user, and can be built by a fabricator. In the case of the Berkman Center, their dynamic history suggested the shape of a story that’s only gotten stronger when faced with multiple, overlapping constraints.</p>
-					<p class="body">That’s a success story.</p>
-
-					<a class="button" href="http://thisisdano.github.io/projects">Return to Projects</a>
-
-				</div>
-			</div>
-			<!-- /.section /#berkman-center -->
-		</section>
-
-		<footer id="footer">
-			<p class="copy">© <script type="text/javascript">
-							now = new Date
-							theYear=now.getYear()
-							if (theYear < 1900)
-							theYear=theYear+1900
-							document.write(theYear)
-					</script>
-				Dano Williams</p>
-			<p>&lt;/pdx&gt; &lt;/brx&gt; Hand-coded in Portland and the Berkshires.</p>
-			<p>Typeface: <a href="https://github.com/18F/18franklin">18Franklin</a> by Pablo Impallari, Rodrigo Fuenzalida, Nhung Nguyen, and Dan O. Williams</p>
-			<p class="nav"><a href="#hello">top</a></p>
-		</footer>
-
-
-		</div>
-		<!-- /#hello -->
-		<script type="text/javascript" src="/js/fastclick.js"></script>
-
-	</body>
-</html>
+      <a class="button" href="/projects/">Return to Projects</a>
+    </div>
+  </div>
+  <!-- /.section /#berkman-center -->
+</section>
