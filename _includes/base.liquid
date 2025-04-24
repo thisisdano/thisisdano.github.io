@@ -1,0 +1,23 @@
+---
+title: Title
+body: "home"
+description: "Dano Williams is a designer in Portland, Oregon"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "meta" %}
+    {% include "fonts" %}
+    {% include "head_scripts" %}
+    {% include "styles" %}
+  </head>
+<body {% if body %}class="{{ body }}"{% endif %}>
+    <div id="hello">
+      {{ content }}
+    </div>
+    {% if body == "home" %}
+      <div class="dots"></div>
+    {% endif %}
+  </body>
+</html>
