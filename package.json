@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Dano's super-fun github website",
   "main": "index.md",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thisisdano/thisisdano.github.io.git"
@@ -26,15 +23,20 @@
     "url": "https://github.com/thisisdano/thisisdano.github.io/issues"
   },
   "homepage": "https://github.com/thisisdano/thisisdano.github.io#readme",
+  "scripts": {
+    "watch:sass": "npx sass --watch styles/scss:styles/css",
+    "build:sass": "npx sass styles/scss:styles/css",
+    "watch:eleventy": "npx eleventy --serve",
+    "build:eleventy": "npx eleventy",
+    "start": "npx npm-run-all build:sass --parallel watch:*",
+    "build": "npx npm-run-all build:*",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/thisisdano.github.io/"
+  },
   "devDependencies": {
-    "browser-sync": "^2.10.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "node-bourbon": "^4.2.3"
-  }
+    "@11ty/eleventy": "^3.0.0",
+    "@splidejs/splide": "^4.1.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.86.3"
+  },
+  "type": "module"
 }
