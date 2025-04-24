@@ -107,7 +107,7 @@ body.case-study {
     .secondary {
       display: block;
       clear: both;
-      color: #444;
+      color: #888;
     }
     @include respond-tablet {
       margin-bottom: 0;
@@ -460,8 +460,6 @@ SECTIONS
   @include respond-tablet {
     border-bottom: none;
     padding-bottom: 0;
-    float: left;
-    width: 60%;
     line-height: 1.1;
     margin-bottom: var(--grid);
   }
@@ -518,10 +516,7 @@ SECTIONS
 
 .section-body {
   @include respond-tablet {
-    margin-top: calc(var(--grid) * 20);
-  }
-  @include respond-desktop {
-    margin-top: calc(var(--grid) * 25);
+    margin-top: calc(var(--grid) * 10);
   }
   p.body {
     @include respond-tablet {
@@ -598,10 +593,6 @@ ul.body {
   @include respond-tablet {
     //font-size: 1.15em;
   }
-}
-
-p.body {
-  //max-width: 33em;
 }
 
 ol.body,
@@ -777,8 +768,6 @@ p.body {
   height: auto;
   display: block;
 }
-.section p + ul li a:hover img {
-}
 
 /*
 --------------
@@ -791,17 +780,15 @@ FOOTER
 #footer {
   margin: calc(var(--grid) * 12) var(--grid) var(--spacer) var(--grid);
   &:before {
-    @include respond-mobile {
-      content: "";
-      display: block;
-      position: relative;
-      top: calc(var(--grid) * -3);
-      width: calc(var(--grid) * 2);
-      height: calc(var(--grid) * 2);
-      border-radius: calc(var(--grid) * 3);
-      background-color: var(--color-blue);
-      left: -1px;
-    }
+    content: "";
+    display: block;
+    position: relative;
+    top: calc(var(--grid) * -3);
+    width: calc(var(--grid) * 2);
+    height: calc(var(--grid) * 2);
+    border-radius: calc(var(--grid) * 3);
+    background-color: var(--color-blue);
+    left: -1px;
   }
 }
 #footer p {
@@ -943,9 +930,8 @@ RESPOND
     padding-right: 0;
   }
   .section h2 {
-    width: 60%;
     padding: 14px 0 0 0;
-    margin-bottom: calc(var(--grid) * 6);
+    margin-bottom: calc(var(--grid) * 3);
     font-size: 1em;
     line-height: 1.3;
   }
