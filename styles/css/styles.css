@@ -164,7 +164,7 @@ body.case-study .project-title .primary {
 body.case-study .project-title .secondary {
   display: block;
   clear: both;
-  color: #444;
+  color: #888;
 }
 @media only screen and (min-width: 747px) {
   body.case-study .project-title {
@@ -565,8 +565,6 @@ SECTIONS
   .project-title {
     border-bottom: none;
     padding-bottom: 0;
-    float: left;
-    width: 60%;
     line-height: 1.1;
     margin-bottom: var(--grid);
   }
@@ -631,12 +629,7 @@ SECTIONS
 
 @media only screen and (min-width: 747px) {
   .section-body {
-    margin-top: calc(var(--grid) * 20);
-  }
-}
-@media only screen and (min-width: 990px) {
-  .section-body {
-    margin-top: calc(var(--grid) * 25);
+    margin-top: calc(var(--grid) * 10);
   }
 }
 @media only screen and (min-width: 747px) {
@@ -931,18 +924,16 @@ FOOTER
 #footer {
   margin: calc(var(--grid) * 12) var(--grid) var(--spacer) var(--grid);
 }
-@media only screen and (max-width: 747px) {
-  #footer:before {
-    content: "";
-    display: block;
-    position: relative;
-    top: calc(var(--grid) * -3);
-    width: calc(var(--grid) * 2);
-    height: calc(var(--grid) * 2);
-    border-radius: calc(var(--grid) * 3);
-    background-color: var(--color-blue);
-    left: -1px;
-  }
+#footer:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: calc(var(--grid) * -3);
+  width: calc(var(--grid) * 2);
+  height: calc(var(--grid) * 2);
+  border-radius: calc(var(--grid) * 3);
+  background-color: var(--color-blue);
+  left: -1px;
 }
 
 #footer p {
@@ -1080,9 +1071,8 @@ RESPOND
     padding-right: 0;
   }
   .section h2 {
-    width: 60%;
     padding: 14px 0 0 0;
-    margin-bottom: calc(var(--grid) * 6);
+    margin-bottom: calc(var(--grid) * 3);
     font-size: 1em;
     line-height: 1.3;
   }
