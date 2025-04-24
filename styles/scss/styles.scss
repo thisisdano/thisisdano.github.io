@@ -6,7 +6,7 @@
   --grid: 8px;
   --spacer: calc(var(--grid) * 2);
   --color-blue: #1553ea;
-  --color-pink: #ff0f0f;
+  --color-pink: #EB0F0F;
   --size-xxs: 0.7em;
   --size-xs: 0.75em;
   --size-s: 0.85em;
@@ -371,6 +371,10 @@ INTRO + THUMBNAILS
   padding-top: var(--grid);
   margin-top: 5px;
   @include size(var(--size-sm));
+  @include respond-tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .item-date {
@@ -379,6 +383,7 @@ INTRO + THUMBNAILS
   width: 3.4em;
   @include size(var(--size-xs));
   @include respond-tablet {
+    width: 3.75em;
     padding-right: 0.3em;
     top: -2px;
   }
@@ -387,19 +392,23 @@ INTRO + THUMBNAILS
 .item-title {
   position: relative;
   @include respond-tablet {
-    top: -1px;
+    top: -3px;
+    flex: 5;
   }
 }
 
 .item-tags {
   padding-left: 3.6em;
   @include respond-tablet {
-    float: right;
     overflow: auto;
     text-align: right;
     top: -2px;
     position: relative;
     padding-left: 0;
+    flex: 4;
+  }
+  @include respond-desktop {
+    flex: 5;
   }
 }
 
