@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/thisisdano/thisisdano.github.io#readme",
   "scripts": {
-    "watch:sass": "npx sass --watch styles/scss:styles/css",
-    "build:sass": "npx sass styles/scss:styles/css",
+    "watch:sass": "npx sass --watch styles/scss:styles/css --style compressed",
+    "build:sass": "npx sass styles/scss:styles/css --style compressed",
     "watch:eleventy": "npx eleventy --serve",
     "build:eleventy": "npx eleventy",
     "start": "npx npm-run-all build:sass --parallel watch:*",

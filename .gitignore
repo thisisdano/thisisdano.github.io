@@ -14,3 +14,4 @@ webfonts
 .sass-cache/
 *.css.map
 _patternlab/
+.styles/css
