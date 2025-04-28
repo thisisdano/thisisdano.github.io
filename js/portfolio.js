@@ -16,6 +16,18 @@ const advance = (instance, current) => {
   }
 };
 
+const uswds = new Splide("#uswds .splide", options);
+uswds.mount();
+uswds.on("click", (slide) => advance(uswds, slide));
+
+const ps = new Splide("#public-sans .splide", options);
+ps.mount();
+ps.on("click", (slide) => advance(ps, slide));
+
+const berk = new Splide("#berkman-center .splide", options);
+berk.mount();
+berk.on("click", (slide) => advance(berk, slide));
+
 const lil = new Splide("#library-innovation-lab .splide", options);
 lil.mount();
 lil.on("click", (slide) => advance(lil, slide));
@@ -23,14 +35,6 @@ lil.on("click", (slide) => advance(lil, slide));
 const perma = new Splide("#perma-cc .splide", options);
 perma.mount();
 perma.on("click", (slide) => advance(perma, slide));
-
-const ftl = new Splide("#free-the-law .splide", options);
-ftl.mount();
-ftl.on("click", (slide) => advance(ftl, slide));
-
-const berk = new Splide("#berkman-center .splide", options);
-berk.mount();
-berk.on("click", (slide) => advance(berk, slide));
 
 const npoWeb = new Splide("#n-plus-one-website .splide", options);
 npoWeb.mount();
