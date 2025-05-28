@@ -347,12 +347,14 @@ os-fun-email {
   top: 2px;
 }
 
-.overview {
+os-overview {
+  display: block;
   padding-top: calc(var(--grid) * 6);
 }
 
-.overview-item {
+os-overview-item {
   border-top: 1px solid;
+  display: block;
   padding-top: var(--grid);
   margin-top: 5px;
   @include size(var(--size-sm));
@@ -360,9 +362,17 @@ os-fun-email {
     display: flex;
     align-items: center;
   }
+
+  > strong {
+    position: relative;
+    @include respond-tablet {
+      top: -3px;
+      flex: 5;
+    }     
+  }
 }
 
-.item-date {
+os-overview-date {
   display: inline-block;
   position: relative;
   width: 3.4em;
@@ -374,15 +384,8 @@ os-fun-email {
   }
 }
 
-.item-title {
-  position: relative;
-  @include respond-tablet {
-    top: -3px;
-    flex: 5;
-  }
-}
 
-.item-tags {
+os-overview-tags {
   padding-left: 3.6em;
   @include respond-tablet {
     text-align: right;
@@ -394,28 +397,39 @@ os-fun-email {
   @include respond-desktop {
     flex: 5;
   }
-}
 
-.item-tag {
-  white-space: nowrap;
-  @include size(var(--size-xs));
-  &:after {
-    content: ", ";
-    @include respond-tablet {
+  ol {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline;
+    white-space: nowrap;
+    @include size(var(--size-xs));
+
+    &:after {
+      content: ", ";
+      @include respond-tablet {
+        content: none;
+      }
+    }
+
+    &:last-child::after {
       content: none;
     }
-  }
-  &:last-child::after {
-    content: none;
-  }
-  & + .item-tag {
-    @include respond-tablet {
-      padding-left: 0.75em;
-    }
+
+    & + li {
+      @include respond-tablet {
+        padding-left: 0.75em;
+      }
+    }  
   }
 }
 
-.section-title {
+h2 {
   margin-bottom: calc(var(--grid) * 2);
 }
 
