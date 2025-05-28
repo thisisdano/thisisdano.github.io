@@ -3,11 +3,6 @@
 @use "fonts.scss" as *;
 
 
-*:focus {
-  outline: 2px solid red;
-  outline-offset: var(--grid);
-}
-
 :root {
   --grid: 8px;
   --spacer: calc(var(--grid) * 2);
@@ -45,6 +40,11 @@ BASICS
   @include respond-mobile {
     display: none;
   }
+}
+
+*:focus {
+  outline: 2px solid red;
+  outline-offset: calc(var(--grid) / 2);
 }
 
 html,
@@ -129,6 +129,10 @@ body.case-study {
     padding: 0 calc(var(--grid) * 2);
     max-width: calc(var(--width-desktop) + calc(var(--grid) * 4));
   }
+}
+
+.home {
+  overflow: hidden;
 }
 
 a:link,
