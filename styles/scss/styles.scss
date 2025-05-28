@@ -5,13 +5,14 @@
 
 *:focus {
   outline: 2px solid red;
+  outline-offset: var(--grid);
 }
 
 :root {
   --grid: 8px;
   --spacer: calc(var(--grid) * 2);
-  --color-blue: #1553ea;
-  --color-pink: #EB0F0F;
+  --color-primary: #1553ea;
+  --color-secondary: #EB0F0F;
   --size-xxs: 0.7em;
   --size-xs: 0.75em;
   --size-s: 0.85em;
@@ -51,18 +52,13 @@ body {
   height: 100%;
 }
 
-.home {
-  overflow: hidden;
-}
-
 body {
   margin: 0;
   background-color: white;
-  color: var(--color-blue);
+  color: var(--color-primary);
   font: 91%/1.55 "Public Sans", system, -apple-system, BlinkMacSystemFont,
     "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-optical-sizing: auto;
-  overflow-x: hidden;
 }
 
 body.case-study {
@@ -76,7 +72,7 @@ body.case-study {
     text-decoration: none;
     strong {
       font-weight: 400;
-      color: var(--color-blue);
+      color: var(--color-primary);
     }
   }
   .section {
@@ -137,11 +133,11 @@ body.case-study {
 
 a:link,
 a:visited {
-  color: var(--color-pink);
+  color: var(--color-secondary);
 }
 
 a:hover {
-  color: var(--color-blue);
+  color: var(--color-primary);
 }
 
 a.button {
@@ -298,7 +294,6 @@ INTRO + THUMBNAILS
 
 os-intro {
   display: block;
-  overflow: auto;
   width: 100%;
   position: relative;
   padding-top: var(--spacer);
@@ -386,7 +381,6 @@ os-fun-email {
 .item-tags {
   padding-left: 3.6em;
   @include respond-tablet {
-    overflow: auto;
     text-align: right;
     top: -2px;
     position: relative;
@@ -431,7 +425,6 @@ SECTIONS
 
 .section {
   clear: both;
-  //overflow: hidden;
   padding-top: calc(var(--grid) * 2);
   @include respond-mobile {
     border-top: calc(var(--grid) * 5) solid;
@@ -485,7 +478,7 @@ SECTIONS
     }
   }
   @include respond-tablet {
-    color: var(--color-blue);
+    color: var(--color-primary);
     border-bottom: 1px solid;
     margin-left: calc(var(--grid) * 4);
     margin-bottom: calc(var(--grid) / 2);
@@ -741,7 +734,6 @@ p.body {
 .section p + ul {
   float: none;
   width: 100%;
-  overflow: hidden;
   margin-bottom: 0;
 }
 .section p + ul li {
@@ -782,7 +774,7 @@ FOOTER
     width: calc(var(--grid) * 2);
     height: calc(var(--grid) * 2);
     border-radius: calc(var(--grid) * 3);
-    background-color: var(--color-blue);
+    background-color: var(--color-primary);
     left: -1px;
   }
 }
@@ -828,7 +820,6 @@ RESPOND
     float: left;
   }
   .section {
-    overflow: hidden;
     padding: var(--spacer) 0;
     ul {
       margin-right: -7px;
@@ -979,7 +970,6 @@ RESPOND
     float: right;
     width: auto;
     clear: none;
-    overflow: auto;
     padding-bottom: 0;
     margin-left: 0;
     margin-bottom: var(--spacer);
@@ -1034,7 +1024,6 @@ RESPOND
   .section p + ul {
     float: none;
     width: auto;
-    overflow: auto;
     margin-top: calc(var(--grid) * 5);
   }
   div.uto {
@@ -1055,7 +1044,7 @@ RESPOND
     width: auto;
   }
   .section p + ul li a:hover img {
-    border: 1px solid var(--color-blue);
+    border: 1px solid var(--color-primary);
   }
 
   #footer {
