@@ -13,7 +13,7 @@ os-contact > ul > li {
     padding-top: calc(var(--grid) / 2);
   }
   @include respond-tablet {
-    font-size: var(--size-xxs);
+    font-size: var(--size-xs);
     padding-right: calc(var(--grid) * 1);
   }
 }  
