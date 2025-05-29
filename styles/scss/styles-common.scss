@@ -109,6 +109,6 @@ os-intro {
   width: 100%;
   @include respond-tablet {
     margin: var(--spacer) 0 0 0;
-    padding: var(--spacer) 0 calc(var(--grid) * 6);
+    padding: var(--spacer) 0 calc(var(--grid) * 4);
   }
 }

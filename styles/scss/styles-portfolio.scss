@@ -99,7 +99,7 @@ os-project {
   margin: 0 calc(var(--grid) * -2);
   padding: calc(var(--grid) * 3) calc(var(--grid) * 2) calc(var(--grid) * 2);
   @include respond-tablet {
-    border-top: 1px solid;
+    border-top: none;
     margin: 0;
     padding: var(--spacer) 0 calc(var(--grid) * 10) ;
   }
@@ -111,10 +111,12 @@ os-project > h2 {
   padding-bottom: calc(var(--grid) * 1);
   @include respond-tablet {
     border-bottom: none;
+    border-top: 1px solid;
     font-size: 100%;
     line-height: 1.1;
     margin-bottom: var(--grid);
     padding-bottom: 0;
+    padding-top: calc(var(--grid) * 2);
   }
 }
 
