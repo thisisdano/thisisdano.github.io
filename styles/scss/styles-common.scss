@@ -47,15 +47,12 @@ body {
   padding: 0 calc(var(--grid) * 2);
   width: auto;
   max-width: var(--width-desktop) + calc(var(--grid) * 4);
-
   @include respond-tablet {
-    padding: 0 calc(var(--grid) * 6);
-    max-width: 768px;
+    padding: 0 calc(var(--grid) * 8);
+    max-width: 58rem;
   }
-
   @include respond-desktop {
-    padding: 0 calc(var(--grid) * 2);
-    max-width: calc(var(--width-desktop) + calc(var(--grid) * 4));
+    max-width: 71rem;
   }
 }
 

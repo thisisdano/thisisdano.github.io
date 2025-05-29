@@ -8,7 +8,7 @@
   --size-sm: 0.825em;
   --size-md: 1em;
   --size-lg: 1.3em;
-  --width-desktop: 990px;
+  --width-desktop: 1020px;
   --weight-bold: 700;
 }
 
@@ -31,7 +31,7 @@
 }
 
 @mixin respond-desktop {
-  @media only screen and (min-width: 990px) {
+  @media only screen and (min-width: 1040px) {
     @content;
   }
 }
