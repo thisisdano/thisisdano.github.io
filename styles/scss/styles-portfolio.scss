@@ -86,8 +86,7 @@ os-project {
   border-top: calc(var(--grid) * 5) solid;
   display: block;
   margin: 0 calc(var(--grid) * -2);
-  padding: calc(var(--grid) * 4) calc(var(--grid) * 2) 0;
-  padding-top: calc(var(--grid) * 3);
+  padding: calc(var(--grid) * 3) calc(var(--grid) * 2) calc(var(--grid) * 2);
   @include respond-tablet {
     border-top: 1px solid;
     margin: 0;
@@ -150,7 +149,7 @@ os-project-slide img {
 
 os-project-slide figcaption {
   display: block;
-  font-size: var(--size-xs);
+  font-size: var(--size-sm);
   padding-bottom: calc(var(--grid) * 2);
   padding-top: calc(var(--grid) * 2);
   @include respond-tablet {
@@ -160,6 +159,7 @@ os-project-slide figcaption {
   
 os-project-slide figcaption strong {
   display: inline-block;
+  font-style: italic;
   @include respond-tablet {
     font-size: var(--size-xs);
   }  
@@ -196,12 +196,13 @@ os-project-typefaces {
   display: block;
   font-size: var(--size-sm);
   font-style: italic;
-  margin-top: calc(var(--grid) * 2);
+  margin-top: calc(var(--grid) * 1.5);
 }
 
 
 #footer {
   margin: calc(var(--grid) * 12) var(--grid) var(--spacer) var(--grid);
+  padding-bottom: calc(var(--grid) * 4);
   &:before {
     background-color: var(--color-primary);
     border-radius: calc(var(--grid) * 3);
