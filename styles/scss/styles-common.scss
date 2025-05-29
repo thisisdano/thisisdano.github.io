@@ -18,6 +18,12 @@
   }
 }
 
+.no-tablet {
+  @include respond-tablet {
+    display: none;
+  }
+}
+
 html,
 body {
   height: 100%;
