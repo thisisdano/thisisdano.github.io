@@ -239,7 +239,7 @@ os-project-description {
   @include respond-desktop {
     column-count: 2;
     column-gap: calc(var(--grid) * 5);
-    padding-top: calc(var(--grid) * 3);
+    padding-top: calc(var(--grid) * 5);
     margin: 0;
   }
 }
