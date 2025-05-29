@@ -141,7 +141,7 @@ os-project-slide {
     margin-top: 0;
   }
   @include respond-desktop {
-    height: calc(var(--grid) * 65);
+    // height: calc(var(--grid) * 65);
     margin-top: var(--spacer);
   }
 }
@@ -171,6 +171,9 @@ os-project-slide figcaption {
   @include respond-tablet {
     padding-top: calc(var(--grid) * 2);
     padding-bottom: 0;
+  }
+  @include respond-desktop {
+    font-size: var(--size-xs);
   }
 }
   
@@ -241,7 +244,6 @@ os-project-description {
   @include respond-desktop {
     column-count: 2;
     column-gap: calc(var(--grid) * 5);
-    padding-top: calc(var(--grid) * 5);
     margin: 0;
   }
 }
