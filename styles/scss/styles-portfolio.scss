@@ -20,7 +20,7 @@ os-overview-item {
 os-overview-item > strong {
   position: relative;
   @include respond-tablet {
-    top: -3px;
+    top: -1px;
     flex: 5;
   }     
 }
@@ -32,7 +32,6 @@ os-overview-date {
   @include respond-tablet {
     font-size: var(--size-xs);
     padding-right: 0.3em;
-    top: -2px;
     width: 3.75em;
   }
 }
@@ -40,7 +39,7 @@ os-overview-date {
 os-overview-tags {
   padding-left: 3.6em;
   @include respond-tablet {
-    flex: 4;
+    flex: 6;
     padding-left: 0;
     position: relative;
     text-align: right;
