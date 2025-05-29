@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PARAMS=('-m 6 -q 50 -mt -af -progress')
+PARAMS=('-m 6 -q 75 -mt -af -progress')
 for D in `find . -type d`
 do
    # cd $D

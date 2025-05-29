@@ -1,0 +1,114 @@
+@use "css-reset.scss" as *;
+@use "mixins-and-vars.scss" as *;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid red;
+  outline-offset: calc(var(--grid) / 2);
+}
+
+.no-mobile {
+  @include respond-mobile {
+    display: none;
+  }
+}
+
+.no-tablet {
+  @include respond-tablet {
+    display: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: var(--color-primary);
+  font: 91%/1.55 "Public Sans", system, -apple-system, BlinkMacSystemFont,
+    "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-optical-sizing: auto;
+  @include respond-tablet {
+    font-size: 100%;
+  }
+  @include respond-desktop {
+    font-size: 115%;
+  }
+}
+
+#hello {
+  margin: 0 auto;
+  padding: 0 calc(var(--grid) * 2);
+  width: auto;
+  max-width: var(--width-desktop) + calc(var(--grid) * 4);
+  @include respond-tablet {
+    padding: 0 calc(var(--grid) * 8);
+    max-width: 58rem;
+  }
+  @include respond-desktop {
+    max-width: 71rem;
+  }
+}
+
+a:link,
+a:visited {
+  color: var(--color-secondary);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+p {
+  margin: 0;
+  clear: both;
+}
+
+em {
+  font-style: italic;
+}
+
+
+h1,
+h2,
+h3,
+strong {
+  font-weight: normal;
+}
+
+h2 {
+  margin-bottom: calc(var(--grid) * 2);
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  @include respond-tablet {
+    width: 100%;
+    height: auto;
+  }
+}
+
+os-intro {
+  display: block;
+  padding-bottom: calc(var(--grid) * 4);
+  padding-top: var(--spacer);
+  position: relative;
+  width: 100%;
+  @include respond-tablet {
+    margin: var(--spacer) 0 0 0;
+    padding: var(--spacer) 0 calc(var(--grid) * 4);
+  }
+}

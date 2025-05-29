@@ -1,0 +1,270 @@
+@use "mixins-and-vars.scss" as *;
+@use "footer.scss" as *;
+
+os-overview {
+  display: block;
+  padding-top: calc(var(--grid) * 6);
+  @include respond-desktop {
+    margin-bottom: calc(var(--grid) * 4);
+  }
+}
+
+os-overview-item {
+  border-top: 1px solid;
+  display: block;
+  margin-top: var(--grid);
+  padding-top: var(--grid);
+  @include respond-tablet {
+    align-items: center;
+    display: flex;
+    font-size: var(--size-sm);
+  }
+  @include respond-desktop {
+    font-size: var(--size-md);
+    margin-top: calc(var(--grid) * 0.75);
+    padding-top: calc(var(--grid) * 0.75);
+  }
+}
+
+os-overview-item > strong {
+  position: relative;
+  @include respond-tablet {
+    top: -1px;
+    flex: 5;
+  }     
+}
+
+os-overview-date {
+  display: inline-block;
+  position: relative;
+  width: 3.4em;
+  @include respond-tablet {
+    font-size: var(--size-xs);
+    padding-right: 0.3em;
+    width: 3.75em;
+  }
+}
+
+os-overview-tags {
+  padding-left: 3.6em;
+  @include respond-tablet {
+    flex: 6;
+    padding-left: 0;
+    position: relative;
+    text-align: right;
+    top: -2px;
+  }
+  @include respond-desktop {
+    flex: 5;
+  }
+}
+
+os-overview-tags ul {
+  list-style-type: none;
+  margin: 0;
+  padding: inherit;
+}
+
+os-overview-tags li {
+  display: inline;
+  white-space: nowrap;
+  @include respond-tablet {
+    font-size: var(--size-xs);
+  }
+  @include respond-desktop {
+    font-size: var(--size-xxs);
+  }
+}
+
+os-overview-tags li:after {
+  content: ", ";
+  @include respond-tablet {
+    content: none;
+  }
+}
+
+os-overview-tags li:last-child::after {
+  content: none;
+}
+
+os-overview-tags li + li {
+  @include respond-tablet {
+    padding-left: 0.75em;
+  }
+}  
+
+os-project {
+  border-top: calc(var(--grid) * 5) solid;
+  display: block;
+  margin: 0 calc(var(--grid) * -2);
+  padding: calc(var(--grid) * 3) calc(var(--grid) * 2) calc(var(--grid) * 2);
+  @include respond-tablet {
+    border-top: none;
+    margin: 0;
+    padding: var(--spacer) 0 calc(var(--grid) * 10) ;
+  }
+}
+
+os-project > h2 {
+  font-size: var(--size-lg);
+  line-height: 1.3;
+  padding-bottom: calc(var(--grid) * 1);
+  @include respond-tablet {
+    border-bottom: none;
+    border-top: 1px solid;
+    font-size: 100%;
+    line-height: 1.1;
+    margin-bottom: var(--grid);
+    padding-bottom: 0;
+    padding-top: calc(var(--grid) * 1.5);
+  }
+}
+
+os-project-content {
+  display: flex;
+  flex-direction: column;
+  @include respond-tablet {
+    margin-top: calc(var(--grid) * 5);
+  }
+  @include respond-desktop {
+    margin-top: 0;
+  }
+}
+
+os-project-slide {
+  cursor: pointer;
+  display: block;
+  margin: calc(var(--grid) * 3) 0 calc(var(--grid) * 2) 0;
+  width: 100%;
+  @include respond-tablet {
+    margin-bottom: calc(var(--spacer) * 2);
+    margin-top: 0;
+  }
+  @include respond-desktop {
+    // height: calc(var(--grid) * 65);
+    margin-top: var(--spacer);
+  }
+}
+
+os-project-slide figure {
+  padding-bottom: calc(var(--grid) * 3);
+  padding-top: var(--grid);
+  @include respond-tablet {
+    padding-bottom: 0;
+  }
+}
+
+os-project-slide img {
+  @include respond-tablet {
+    height: auto;
+    max-width: var(--width-desktop);
+    max-height: calc(var(--width-desktop) / 2);
+    width: 100%;
+  }
+}
+
+os-project-slide figcaption {
+  display: block;
+  font-size: var(--size-sm);
+  padding-bottom: calc(var(--grid) * 2);
+  padding-top: calc(var(--grid) * 2);
+  @include respond-tablet {
+    padding-top: calc(var(--grid) * 2);
+    padding-bottom: 0;
+  }
+  @include respond-desktop {
+    font-size: var(--size-xs);
+  }
+}
+  
+os-project-slide figcaption strong {
+  display: inline-block;
+  font-style: italic;
+  @include respond-tablet {
+    font-size: var(--size-xs);
+    font-style: normal;
+  }  
+}
+  
+os-project-slide p {
+  margin-top: calc(var(--grid) * 2);
+  @include respond-tablet {
+    margin-top: 0;
+  }  
+}
+
+.splide__arrows {
+  display: none;
+  @include respond-tablet {
+    display: block;
+  }
+}
+
+.splide__arrow {
+  background-color: white;
+  border: 1px solid var(--color-secondary);
+  opacity: 1;
+  top: 47%;
+}
+
+.splide__arrow svg {
+  fill: var(--color-secondary);
+  opacity: 1;
+}
+
+.splide__arrow--prev {
+   @include respond-tablet {
+    left: -3em;
+  } 
+}
+
+.splide__arrow--next {
+   @include respond-tablet {
+    right: -3em;
+  } 
+}
+
+.splide__pagination__page.is-active {
+  background: var(--color-primary);
+  opacity: 1;
+}
+
+.splide__pagination {
+  @include respond-tablet {
+    display: none;
+  }
+}
+
+os-project-description {
+  display: block;
+  order: -1;
+  @include respond-tablet {
+    order: initial;
+  }
+  @include respond-desktop {
+    column-count: 2;
+    column-gap: calc(var(--grid) * 5);
+    margin: 0;
+  }
+}
+
+os-project-description p {
+  @include respond-desktop {
+    font-size: var(--size-sm)
+  }
+}
+
+os-project-typefaces {
+  display: block;
+  font-size: var(--size-sm);
+  font-style: italic;
+  margin-top: calc(var(--grid) * 1.5);
+  @include respond-tablet {
+    font-size: var(--size-xs);
+    margin-top: calc(var(--grid) * 1.5);
+  }
+  @include respond-desktop {
+    font-size: var(--size-xxs);
+    margin-top: calc(var(--grid) * 0.5);
+  }
+}

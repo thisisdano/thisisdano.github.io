@@ -12,12 +12,12 @@ description: "Dano Williams is a designer in Portland, Oregon"
     {% include "head_scripts" %}
     {% include "styles" %}
   </head>
-<body {% if body %}class="{{ body }}"{% endif %}>
+  <body {% if body %}class="{{ body }}"{% endif %}>
     <div id="hello">
       {{ content }}
     </div>
     {% if body == "home" %}
-      <div class="dots"></div>
+      <os-dots></os-dots>
     {% endif %}
   </body>
 </html>
