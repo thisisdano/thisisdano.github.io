@@ -1,4 +1,5 @@
 @use "mixins-and-vars.scss" as *;
+@use "footer.scss" as *;
 
 os-overview {
   display: block;
@@ -185,13 +186,26 @@ os-project-slide p {
 
 .splide__arrow {
   background-color: white;
+  border: 1px solid var(--color-secondary);
   opacity: 1;
-  border: 1px solid var(--color-secondary)
+  top: 47%;
 }
 
 .splide__arrow svg {
   fill: var(--color-secondary);
   opacity: 1;
+}
+
+.splide__arrow--prev {
+   @include respond-tablet {
+    left: -3em;
+  } 
+}
+
+.splide__arrow--next {
+   @include respond-tablet {
+    right: -3em;
+  } 
 }
 
 .splide__pagination__page.is-active {
@@ -211,6 +225,18 @@ os-project-description {
   @include respond-tablet {
     order: initial;
   }
+  @include respond-desktop {
+    column-count: 2;
+    column-gap: calc(var(--grid) * 5);
+    padding-top: calc(var(--grid) * 4);
+    margin: 0;
+  }
+}
+
+os-project-description p {
+  @include respond-desktop {
+    font-size: var(--size-sm)
+  }
 }
 
 os-project-typefaces {
@@ -221,43 +247,8 @@ os-project-typefaces {
   @include respond-tablet {
     margin-top: calc(var(--grid) * 2);
   }
-}
-
-footer {
-  margin: calc(var(--grid) * 12) var(--grid) var(--spacer) var(--grid);
-  padding-bottom: calc(var(--grid) * 4);
-  &:before {
-    background-color: var(--color-primary);
-    border-radius: calc(var(--grid) * 3);
-    content: "";
-    display: block;
-    height: calc(var(--grid) * 2);
-    left: -1px;
-    position: relative;
-    top: calc(var(--grid) * -3);
-    width: calc(var(--grid) * 2);
-  }
   @include respond-tablet {
-    padding: 0;
-    margin: 0;
-    padding-bottom: calc(var(--grid) * 3);
-  }
-  @include respond-desktop {
-    padding: var(--spacer) 0;
-    margin: calc(var(--grid) * 6) 0 calc(var(--grid) * 4) 0;
-    font-size: 0.75em;
-  }
-}
-
-footer p {
-  font-size: 0.8em;
-  margin: 0;
-}
-
-p.nav {
-  padding-top: calc(var(--grid) * 2);
-  @include respond-tablet {
-    padding-top: 0;
-    text-align: right;
+    font-size: var(--size-xxs);
+    margin-top: calc(var(--grid) * 0.5);
   }
 }
