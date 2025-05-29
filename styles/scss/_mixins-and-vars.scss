@@ -1,7 +1,14 @@
-/* notes */
-/* 100% = 16px = 1em */
-/* 20px = 1.25em */
-/* 24px = 1.5em */
+:root {
+  --grid: 8px;
+  --spacer: calc(var(--grid) * 2);
+  --color-primary: #1553ea;
+  --color-secondary: #EB0F0F;
+  --size-xxs: 0.7em;
+  --size-xs: 0.75em;
+  --size-sm: 0.85em;
+  --width-desktop: 990px;
+  --weight-bold: 700;
+}
 
 @mixin respond-mobile {
   @media only screen and (max-width: calc(748px - 1px)) {

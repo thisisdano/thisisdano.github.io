@@ -1,0 +1,146 @@
+@use "mixins-and-vars.scss" as *;
+
+.section-body {
+  @include respond-tablet {
+    margin-top: calc(var(--grid) * 10);
+  }
+  p.body {
+    @include respond-tablet {
+      margin-bottom: 1em;
+    }
+    @include respond-desktop {
+      font-size: 1.15em;
+      margin-bottom: 1.3em;
+    }
+  }
+}
+
+h3.body {
+  margin-top: 1.5em;
+  font-size: 1.3em;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5em;
+  strong {
+    color: #ffc934;
+  }
+  @include respond-tablet {
+    font-size: 1em;
+    margin-top: 2.5em;
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 1em;
+    float: left;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 8px;
+      border-bottom: 1px solid;
+    }
+  }
+  & + p {
+    @include respond-tablet {
+      margin-top: 1em;
+    }
+    @include respond-desktop {
+      margin-top: 2em;
+    }
+  }
+}
+
+h4.body {
+  margin-top: 1.5em;
+  font-weight: var(--weight-bold);
+  clear: both;
+  @include respond-tablet {
+    padding-top: 1.5em;
+    margin-top: 0;
+    font-size: 0.8em;
+  }
+  @include respond-desktop {
+    font-size: 0.8em;
+  }
+  & + p,
+  & + ul,
+  & + ol {
+    margin-top: 0.25em;
+  }
+  & + ul,
+  & + ol {
+    @include respond-tablet {
+      margin-top: 1em;
+    }
+  }
+}
+
+p.body,
+ol.body,
+ul.body {
+  @include respond-tablet {
+    //font-size: 1.15em;
+  }
+}
+
+ol.body,
+ul.body {
+  margin-top: 1em;
+  padding-left: calc(var(--grid) * 3);
+  li + li {
+    margin-top: 0.5em;
+  }
+  @include respond-tablet {
+    max-width: 45em;
+    margin-left: calc(var(--grid) * 2);
+    margin-top: 1em;
+  }
+  @include respond-desktop {
+    font-size: 1.15em;
+  }
+  & + p {
+    margin-top: 1em;
+    @include respond-tablet {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+ol.body {
+  counter-reset: myCounter;
+  li {
+    text-indent: -24px;
+  }
+  li:before {
+    content: counter(myCounter) ". ";
+    counter-increment: myCounter;
+    font-weight: var(--weight-bold);
+    width: 24px;
+    text-indent: 0;
+    display: inline-block;
+  }
+  @include respond-desktop {
+    li {
+      text-indent: -32px;
+    }
+    li:before {
+      width: 32px;
+    }
+  }
+}
+
+ul.body {
+  padding-left: calc(var(--grid) * 2);
+  li {
+    list-style-type: disc;
+    strong {
+      font-weight: var(--weight-bold);
+      @include respond-desktop {
+        font-weight: 400;
+      }
+    }
+  }
+  & + h4.body {
+    @include respond-tablet {
+      padding-top: 3em;
+    }
+  }
+}
