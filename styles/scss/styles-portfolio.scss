@@ -89,7 +89,7 @@ os-project {
   @include respond-tablet {
     border-top: 1px solid;
     margin: 0;
-    padding: var(--spacer) var(--grid) var(--grid) var(--grid);
+    padding: var(--spacer) 0 calc(var(--grid) * 10) ;
   }
 }
 
@@ -99,6 +99,7 @@ os-project > h2 {
   padding-bottom: calc(var(--grid) * 1);
   @include respond-tablet {
     border-bottom: none;
+    font-size: 100%;
     line-height: 1.1;
     margin-bottom: var(--grid);
     padding-bottom: 0;
@@ -109,7 +110,7 @@ os-project-content {
   display: flex;
   flex-direction: column;
   @include respond-tablet {
-    margin-top: calc(var(--grid) * 11);
+    margin-top: calc(var(--grid) * 5);
   }
   @include respond-desktop {
     margin-top: 0;
@@ -122,7 +123,6 @@ os-project-slide {
   margin: calc(var(--grid) * 3) 0 calc(var(--grid) * 2) 0;
   width: 100%;
   @include respond-tablet {
-    height: calc(var(--grid) * 50);
     margin-bottom: calc(var(--spacer) * 2);
     margin-top: 0;
   }
@@ -135,6 +135,9 @@ os-project-slide {
 os-project-slide figure {
   padding-bottom: calc(var(--grid) * 3);
   padding-top: var(--grid);
+  @include respond-tablet {
+    padding-bottom: 0;
+  }
 }
 
 os-project-slide img {
@@ -152,7 +155,8 @@ os-project-slide figcaption {
   padding-bottom: calc(var(--grid) * 2);
   padding-top: calc(var(--grid) * 2);
   @include respond-tablet {
-    padding-top: calc(var(--grid) * 2);
+    padding-top: calc(var(--grid) * 3);
+    padding-bottom: 0;
   }
 }
   
@@ -161,6 +165,7 @@ os-project-slide figcaption strong {
   font-style: italic;
   @include respond-tablet {
     font-size: var(--size-xs);
+    font-style: normal;
   }  
 }
   
@@ -178,9 +183,26 @@ os-project-slide p {
   }
 }
 
+.splide__arrow {
+  background-color: white;
+  opacity: 1;
+  border: 1px solid var(--color-secondary)
+}
+
+.splide__arrow svg {
+  fill: var(--color-secondary);
+  opacity: 1;
+}
+
 .splide__pagination__page.is-active {
   background: var(--color-primary);
   opacity: 1;
+}
+
+.splide__pagination {
+  @include respond-tablet {
+    display: none;
+  }
 }
 
 os-project-description {
@@ -196,6 +218,9 @@ os-project-typefaces {
   font-size: var(--size-sm);
   font-style: italic;
   margin-top: calc(var(--grid) * 1.5);
+  @include respond-tablet {
+    margin-top: calc(var(--grid) * 2);
+  }
 }
 
 
@@ -234,19 +259,6 @@ p.nav {
 
 
 @include respond-tablet {
-  os-project p {
-    margin: 0 0 calc(var(--spacer) * 2) 0;
-  }
-  os-project {
-    padding: var(--spacer) 0;
-    h2 {
-      line-height: 1;
-      margin-bottom: 0;
-    }
-  }
-  os-project-slide + p {
-    margin-top: calc(var(--grid) * 4);
-  }
   #footer {
     padding: 0;
     margin: 0;
