@@ -1,7 +1,16 @@
-/* notes */
-/* 100% = 16px = 1em */
-/* 20px = 1.25em */
-/* 24px = 1.5em */
+:root {
+  --grid: 8px;
+  --spacer: calc(var(--grid) * 2);
+  --color-primary: #1553ea;
+  --color-secondary: #EB0F0F;
+  --size-xxs: 0.65em;
+  --size-xs: 0.75em;
+  --size-sm: 0.825em;
+  --size-md: 1em;
+  --size-lg: 1.3em;
+  --width-desktop: 1020px;
+  --weight-bold: 700;
+}
 
 @mixin respond-mobile {
   @media only screen and (max-width: calc(748px - 1px)) {
@@ -22,7 +31,7 @@
 }
 
 @mixin respond-desktop {
-  @media only screen and (min-width: 990px) {
+  @media only screen and (min-width: 1040px) {
     @content;
   }
 }

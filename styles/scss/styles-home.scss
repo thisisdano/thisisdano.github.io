@@ -1,0 +1,46 @@
+@use "mixins-and-vars.scss" as *;
+
+os-contact > ul {
+  margin-top: var(--grid);
+  padding-top: var(--grid);
+}
+
+os-contact > ul > li {
+  display: inline-block;
+  padding-right: var(--spacer);
+  @include respond-mobile {
+    display: block;
+    padding-top: calc(var(--grid) / 2);
+  }
+  @include respond-tablet {
+    font-size: var(--size-xs);
+    padding-right: calc(var(--grid) * 1);
+  }
+}  
+
+os-fun-email {
+  display: block;
+  margin-top: var(--grid);
+  position: relative;
+  top: -1px;
+  @include respond-tablet {
+    margin-top: 0;
+  }
+}
+
+os-dots {
+  background-image: url("../../img/meta/dots.svg");
+  background-repeat: repeat;
+  background-size: 8px;
+  display: block;
+  height: 100%;
+}
+
+.home {
+  overflow: hidden;
+}
+
+.fun {
+  position: relative;
+  top: 2px;
+}
