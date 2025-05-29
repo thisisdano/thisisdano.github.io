@@ -1,0 +1,40 @@
+@use "mixins-and-vars.scss" as *;
+
+footer {
+  margin: calc(var(--grid) * 12) var(--grid) var(--spacer) var(--grid);
+  padding-bottom: calc(var(--grid) * 4);
+  &:before {
+    background-color: var(--color-primary);
+    border-radius: calc(var(--grid) * 3);
+    content: "";
+    display: block;
+    height: calc(var(--grid) * 2);
+    left: -1px;
+    position: relative;
+    top: calc(var(--grid) * -3);
+    width: calc(var(--grid) * 2);
+  }
+  @include respond-tablet {
+    padding: 0;
+    margin: 0;
+    padding-bottom: calc(var(--grid) * 3);
+  }
+  @include respond-desktop {
+    padding: var(--spacer) 0;
+    margin: calc(var(--grid) * 6) 0 calc(var(--grid) * 4) 0;
+    font-size: 0.75em;
+  }
+}
+
+footer p {
+  font-size: var(--size-sm);
+  margin: 0;
+}
+
+p.nav {
+  padding-top: calc(var(--grid) * 2);
+  @include respond-tablet {
+    padding-top: 0;
+    text-align: right;
+  }
+}

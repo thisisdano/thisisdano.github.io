@@ -49,7 +49,7 @@ body {
   max-width: var(--width-desktop) + calc(var(--grid) * 4);
 
   @include respond-tablet {
-    padding: 0 calc(var(--grid) * 4);
+    padding: 0 calc(var(--grid) * 6);
     max-width: 768px;
   }
 
