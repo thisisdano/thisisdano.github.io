@@ -3,9 +3,7 @@ import Splide from "/js/splide/splide.esm.js";
 console.log("Oh hi!");
 
 const options = {
-  pagination: false,
   rewind: true,
-  type: "fade",
 };
 
 const advance = (instance, current) => {

@@ -1,14 +1,11 @@
 ---
 layout: portfolio.liquid
 title: Projects by Dano Williams
-body: null
+body: portfolio
 ---
 
 <os-intro>
-  <h1>Dano Williams</h1>
-  <os-dek>
-    <p><a href="/"><strong>Dano Williams</strong></a> is a designer in Portland, Oregon.</p>
-  </os-dek>
+  <h1><a href="/"><strong>Dano Williams</strong></a> is a designer in Portland, Oregon.</h1>
 
   <os-overview>
     <h2>Selected Projects</h2>
@@ -16,7 +13,7 @@ body: null
       <os-overview-date>2025</os-overview-date>
       <strong><a href="#uswds">The United States Web Design System</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Product management and design</li>
           <li>Front-end development</li>
           <li>Leadership</li>
@@ -27,7 +24,7 @@ body: null
       <os-overview-date>2018</os-overview-date>
       <strong><a href="#public-sans">Public Sans typeface</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Typeface design</li>
           <li>Front-end development</li>
         </ul>
@@ -37,7 +34,7 @@ body: null
       <os-overview-date>2015</os-overview-date>
       <strong><a href="#berkman-center">Berkman Center <span class="no-mobile">for Internet &amp; Society</span> prospectus</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Print design</li>
           <li>Information design</li>
           <li>Data visualization</li>
@@ -49,7 +46,7 @@ body: null
       <os-overview-date>2015</os-overview-date>
       <strong><a href="#library-innovation-lab">Library Innovation Lab website <span class="no-mobile">and identity</span></a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Front-end development</li>
           <li>Content strategy</li>
           <li>Logo design</li>
@@ -61,7 +58,7 @@ body: null
       <os-overview-date>2015</os-overview-date>
       <strong><a href="#perma-cc">Perma.cc redesign</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Front-end development</li>
           <li>Web app</li>
           <li>Content strategy</li>
@@ -73,7 +70,7 @@ body: null
       <os-overview-date>2014</os-overview-date>
       <strong><a href="#n-plus-one-website">nplusonemag.com site design</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Front-end development</li>
           <li>Content strategy</li>
           <li>Icons/UI</li>
@@ -84,7 +81,7 @@ body: null
       <os-overview-date>2005+</os-overview-date>
       <strong><a href="#n-plus-one-magazine">n+1 publishing system</a></strong>
       <os-overview-tags>
-        <ul>
+        <ul role="list">
           <li>Book design</li>
           <li>Identity</li>
           <li>Illustration</li>
@@ -94,656 +91,589 @@ body: null
   </os-overview>
 </os-intro>
 
-<section class="sections">
-  <div class="section" id="uswds">
-    <h2 class="project-title">The United States Web Design System</h2>
-    <div class="section-content">
-      <!-- featured image -->
-      <section
-        class="splide featured-image"
-        aria-label="USWDS portfolio"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/uswds/uswds-component.webp"
-                  alt="USWDS component"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/5 </strong>USWDS components include complete usage guidance — from accessibility to settings, customization, and latest updates.
-                </figcaption>
-              </figure>
-            </li>
-           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/uswds/uswds-overview.webp"
-                  alt="USWDS overview"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/5 </strong>USWDS provides principles, guidance, and code for building websites and services for the United States federal government.
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/uswds/uswds-tokens.webp"
-                  alt="USWDS tokens"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/5 </strong>USWDS was one of the first major design systems to use a expressive language of design tokens.
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/uswds/uswds-graphics.webp"
-                  alt="USWDS graphics"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>4/5 </strong>I created a consistent visual tone for the design system.
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/uswds/uswds-monthly-calls.webp"
-                  alt="USWDS monthly calls"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>5/5 </strong>I wrote and designed over seven years of public, hourlong monthly calls to help educate and connect federal digital practitioners.
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="desc">
+<os-project id="uswds">
+  <h2>The United States Web Design System</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/uswds/uswds-component.webp"
+                alt="USWDS component"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/5</strong> USWDS components include complete usage guidance — from accessibility to settings, customization, and latest updates.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/uswds/uswds-overview.webp"
+                alt="USWDS overview"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/5</strong> USWDS provides principles, guidance, and code for building websites and services for the United States federal government.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/uswds/uswds-tokens.webp"
+                alt="USWDS tokens"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/5</strong> USWDS was one of the first major design systems to use a expressive language of design tokens.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/uswds/uswds-graphics.webp"
+                alt="USWDS graphics"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>4/5</strong> I created a consistent visual tone for the design system.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/uswds/uswds-monthly-calls.webp"
+                alt="USWDS monthly calls"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>5/5</strong> I wrote and designed over seven years of public, hourlong monthly calls to help educate and connect federal digital practitioners.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <os-project-description>
+      <p>
         Over eight years and three presidential administrations, I served as Project Lead for the federal government's design system, USWDS, helping it grow from a recently-released 1.0 product to a stable, mature, and trustworthy open source tool at the cusp of its fourth major version. I lead the team through a period of significant transition, designing and building <a href="https://designsystem.digital.gov">the USWDS website</a>, developing its strategy, hiring staff and structuring contracts, and working to grow a community of practioners around shared principles and the values of human centered design. We developed a strong commitment to working in the open. We managed the product in <a href="https://github.com/uswds/uswds">GitHub</a>, produced hourlong monthly public presentions, and delivered regular releases to the codebase. Our commitment to accessibility is resulting in services that reduce the barriers to participation across the federal government, and is a model for state, local, and tribal governments, as well as the private sector.
-        <span
-          ><strong>Typefaces:</strong> Public Sans, Source Sans Pro, Merriweather, Roboto Mono</span
-        >
       </p>
-    </div>
-  </div>
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> Public Sans, Source Sans Pro, Merriweather, Roboto Mono
+      </os-project-typefaces>
+    </os-project-description>
+  </os-project-content>
+</os-project>
 
-  <div class="section" id="public-sans">
-    <h2 class="project-title">Public Sans typeface</h2>
-    <div class="section-content">
-      <!-- featured image -->
-      <section
-        class="splide featured-image"
-        aria-label="Public Sans typeface"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/ps/public-sans-detail.webp"
-                  alt="Public Sans detail"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/3 </strong>Public Sans detail
-                </figcaption>
-              </figure>
-            </li>
-           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/ps/public-sans.webp"
-                  alt="Public Sans"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/3 </strong>Public Sans is a strong, neutral typeface for interfaces, text, and headings, developed for the United States federal government.
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/ps/public-sans-website.webp"
-                  alt="Public Sans website"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/3 </strong>Public Sans specimen website
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p class="desc">
-        While working at <a href="https://18f.org/">18F</a> and <a href="https://designsystem.digital.gov">USWDS</a>, I adapted an existing open source typeface, Libre Franklin, into a full-featured neutral sans serif, suitable for the United States federal government. This variable font includes nine weights from thin to black, an italic, and significant international language support. With distribution both in <a href="https://github.com/uswds/public-sans">a Public Sans GitHub repo</a> and through services like <a href="https://fonts.google.com/specimen/Public+Sans">Google Fonts</a>, Public Sans has found widespread adoption beyond government.
-        <span
-          ><strong>Typefaces:</strong> Public Sans</span
-        >
-      </p>
-    </div>
-  </div>
-
-  <div class="section" id="berkman-center">
-    <h2 class="project-title">
-      The Berkman Center for Internet&nbsp;&amp;&nbsp;Society prospectus
-    </h2>
-    <div class="section-content">
-      <section
-        class="splide featured-image"
-        aria-label="Berkman Klein portfolio"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/berk/berk-1.webp"
-                  alt="berkman infographic detail"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/3</strong> A concise, visually stunning
-                  history of the Center’s projects
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/berk/berk-4.webp"
-                  alt="berkman cover and interior"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/3</strong> The motif of a radiant center
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/berk/berk-3.webp"
-                  alt="berkman interior detail"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/3</strong> Statistics deepen the
-                  Center’s story
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- description -->
-      <p class="desc">
-        <a href="https://cyber.harvard.edu/"
-          >The Berkman Center for Internet &amp; Society</a
-        > (now the Berkman Klein Center for Internet &amp; Society)
-        is one of the oldest and most respected insitutions devoted to the study
-        of the Internet and an open web. Creative Commons, Chilling Effects,
-        Wikipedia, and the podcast can all trace their development through the
-        Center. This new prospectus communicates the Berkman Center’s history
-        and values through the motif of a radiant center — both as pure image
-        and as practical infographic — an image of a rigorous, exciting, and
-        limitless academic environment. It lays the conceptual groundwork for
-        the Center’s modern identity and its larger communication strategy.
-        <a href="berkman">Read a complete case study of this project.</a
-        ><span><strong>Typefaces:</strong> GT Walsheim, Post Grotesk.</span>
-      </p>
-    </div>
-  </div>
-
-  <div class="section" id="library-innovation-lab">
-    <h2 class="project-title">Library Innovation Lab website and identity</h2>
-    <div class="section-content">
-      <!-- featured image -->
-      <section
-        class="splide featured-image"
-        aria-label="Library Innovation Lab portfolio"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/lil/lil-3.webp"
-                  alt="lil pages"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/4</strong> Simple typography and bold
-                  colors
-                </figcaption>
-              </figure>      
-            </li>
+<os-project id="public-sans">
+  <h2>Public Sans typeface</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/lil/lil-icons.webp"
-                  alt="lil project icons"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/4 </strong>Project icons
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/lil/lil-1.webp"
-                  alt="lil logos"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/4</strong> Logo variations for mutiple
-                  contexts
-                </figcaption>      
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/lil/lil-2.webp"
-                  alt="lil responsive"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>4/4</strong> Responsive, mobile-first
-                  design
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- <div class="featured-image">
-      </div> -->
-      <!-- description -->
-      <p class="desc">
-        The future doesn’t always have to destroy or disrupt the past. It can
-        build on it, strengthen it, and discover its forgotten strengths and
-        successes as well. Harvard’s
-        <a href="http://librarylab.law.harvard.edu">Library Innovation Lab</a>
-        is a brilliant example of the critical role for libraries, academia, and
-        other noncommercial institutions of public knowledge in the digital
-        future. I&nbsp;was fortunate to join their smart, passionate team as a
-        Designer-in-Residence for 2015. Together we built
-        <a href="http://librarylab.law.harvard.edu">a new website</a> and
-        identity system to communicate the Lab’s impressive smarts, vitality,
-        and breadth of accomplishment.
-        <span
-          ><strong>Typefaces:</strong> Founders Grotesk Text, Post Grotesk</span
-        >
-      </p>
-    </div>
-  </div>
-
-  <div class="section" id="perma-cc">
-    <h2 class="project-title">Perma.cc redesign</h2>
-    <div class="section-content">
-      <!-- featured image -->
-      <section
-        class="splide featured-image"
-        aria-label="Perma.cc portfolio"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/perma/perma-1.webp"
-                  alt="perma responsive"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/3</strong> Content strategy is at the
-                  core of the overall product definition
-                </figcaption>
-              </figure>
-            </li>
-           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/perma/perma-3.webp"
-                  alt="perma flow"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/3</strong> Simplified flows for common
-                  tasks
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/perma/perma-2.webp"
-                  alt="perma pages"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/3</strong> Streamlined UI, and a more
-                  consistent user experience
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- description -->
-      <p class="desc">
-        Link rot kills academic citations and
-        <a href="http://perma.cc">Perma.cc</a> stops link rot. Harvard’s
-        <a href="http://librarylab.law.harvard.edu">Library Innovation Lab</a>
-        developed Perma.cc to provide scholars and legal professionals a way to
-        create permanent, reliable, unbreakable links to the digital sources
-        cited in their work. This redesign helped the Lab take a hard look at
-        the Perma.cc’s usability, making the core functionality more consistent
-        and predictable. We looked at the typefaces, colors, and button shapes,
-        but — just as importantly — at the language system at the center of the
-        overall product definition. We built a trustworthy, bulletproof
-        responsive design to take Perma.cc from a promising beta to a polished
-        1.0 web app.
-        <span><strong>Typeface:</strong> Roboto</span>
-      </p>
-    </div>
-  </div>
-
-  <div class="section" id="n-plus-one-website">
-    <h2 class="project-title">nplusonemag.com site design</h2>
-    <div class="section-content">
-      <section
-        class="splide featured-image"
-        aria-label="n+1 website portfolio"
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-content.webp"
-                  alt="npo-content"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/6</strong> A focus on detail and
-                  typography
-                </figcaption>
-              </figure>
-            </li>
+            <figure>
+              <img
+                src="/img/ps/public-sans-detail.webp"
+                alt="Public Sans detail"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/3</strong> Public Sans detail
+              </figcaption>
+            </figure>
+          </li>
           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-online-only.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/6</strong> Modules form the basis of the
-                  article discovery model
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-mag-home.webp"
-                  alt="npo-mag-home"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/6</strong> Consistent experience across
-                  devices
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-article.webp"
-                  alt="npo-article"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>4/6</strong> Articles built for longform
-                  reading
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-pages.webp"
-                  alt="npo-pages"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>5/6</strong> A complete publication suite
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/web/npo-themagazine.webp"
-                  alt="npo-themagazine"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>6/6</strong> The canonical version of the
-                  magazine is online
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
+            <figure>
+              <img
+                src="/img/ps/public-sans.webp"
+                alt="Public Sans"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/3</strong> Public Sans is a strong, neutral typeface for interfaces, text, and headings, developed for the United States federal government.
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/ps/public-sans-website.webp"
+                alt="Public Sans website"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/3</strong> Public Sans specimen website
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      While working at <a href="https://18f.org/">18F</a> and <a href="https://designsystem.digital.gov">USWDS</a>, I adapted an existing open source typeface, Libre Franklin, into a full-featured neutral sans serif, suitable for the United States federal government. This variable font includes nine weights from thin to black, an italic, and significant international language support. With distribution both in <a href="https://github.com/uswds/public-sans">a Public Sans GitHub repo</a> and through services like <a href="https://fonts.google.com/specimen/Public+Sans">Google Fonts</a>, Public Sans has found widespread adoption beyond government.
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> Public sans
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
 
-      <!-- description -->
-      <p class="desc">
-        2014’s redesign (now nearly three years old) was a fundamental change
-        for <a href="https://www.nplusonemag.com">n+1</a>: now the canonical
-        version of the magazine is online. The digital-first redesign allowed
-        n+1 to continue its free web-only articles while adding a new paid
-        online subscription level. The new interactive experience was informed
-        by a detailed content strategy that analyzed the components of the
-        publication and a design strategy that put the reading experience first.
-        <span
-          ><strong>Typefaces:</strong> Adelle, Adelle Sans, Freight Sans.</span
-        >
-      </p>
-    </div>
-  </div>
-  <!-- /.section /#n-plus-one-website -->
-
-  <!-- n+1 mag -->
-  <div class="section" id="n-plus-one-magazine">
-    <h2 class="project-title">n+1 publication system</h2>
-    <div class="section-content">
-      <section
-        class="splide featured-image"
-        aria-label="n+1 publication portfolio"
+<os-project id="berkman-center">
+  <h2>The Berkman Center for Internet&nbsp;&amp;&nbsp;Society prospectus</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/berk/berk-1.webp"
+                alt="berkman infographic detail"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/3</strong> A concise, visually stunning
+                history of the Center’s projects
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/berk/berk-4.webp"
+                alt="berkman cover and interior"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/3</strong> The motif of a radiant center
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/berk/berk-3.webp"
+                alt="berkman interior detail"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/3</strong> Statistics deepen the
+                Center’s story
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      <a href="https://cyber.harvard.edu/"
+        >The Berkman Center for Internet &amp; Society</a
+      > (now the Berkman Klein Center for Internet &amp; Society)
+      is one of the oldest and most respected insitutions devoted to the study
+      of the Internet and an open web. Creative Commons, Chilling Effects,
+      Wikipedia, and the podcast can all trace their development through the
+      Center. This new prospectus communicates the Berkman Center’s history
+      and values through the motif of a radiant center — both as pure image
+      and as practical infographic — an image of a rigorous, exciting, and
+      limitless academic environment. It lays the conceptual groundwork for
+      the Center’s modern identity and its larger communication strategy.
+      <a href="berkman">Read a complete case study of this project.</a
       >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/sys/np1-sys-occupy.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>1/6</strong>
-                  <cite>Occupy!</cite> issue 1 (2011)
-                  <span class="note"
-                    >Typefaces: Versa Sans, Nitti, Berthold Akzidenz Grotesk</span
-                  >
-                </figcaption>
-              </figure>
-            </li>
-           <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/sys/n1-covers-1.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>2/6</strong> n+1 magazine publication
-                  design, with original illustrations (2005–present)
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/sys/np1-sys-issue24.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>3/6</strong>
-                  <cite>Number 24: New Age</cite> (2016)
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/sys/np1-sys-noregrets.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>4/6</strong>
-                  <cite>No Regrets</cite> book (2014)
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/sys/np1-tote-1.webp"
-                  alt="npo-online-only"
-                  width="1200"
-                  height="600"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>5/6</strong> n plus ultra, 10th
-                  anniversary tote bags (2014)
-                </figcaption>
-              </figure>
-            </li>
-            <li class="splide__slide">
-              <figure class="slide">
-                <img
-                  src="/img/npo/uto/500/uto-2.webp"
-                  alt="utopia in our time!"
-                  width="333"
-                  height="500"
-                  class="slide-image"
-                />
-                <figcaption>
-                  <strong>6/6</strong> Utopia in Our Time! silksceen
-                  poster (2010 and 2015)
-                  <span class="note">Typeface: Utopia (modified)</span>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> GT Walsheim, Post Grotesk.
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
 
-      <!-- description -->
-      <p class="desc">
-        <a href="https://www.nplusonemag.com">n+1</a> is a journal of politics,
-        literature, and contemporary thought based in Brooklyn, NY. Their
-        publishing system, developed in 2005, is an idiosyncratic mix of
-        traditional typographic design and colorful abstract illustration. From
-        the beginning, n+1’s primary focus has been its texts. Its visual
-        materials are designed to support the writing without overwhelming it —
-        to be distinctive without distraction and to add tone with minimal
-        aesthetic posturing.
-        <span
-          ><strong>Typefaces:</strong> Versa Sans and Warnock Pro, unless
-          otherwise noted.</span
-        >
-      </p>
-    </div>
-  </div>
-  <!-- /.section /#n-plus-one-magazine -->
-</section>
+<os-project id="library-innovation-lab">
+  <h2>Library Innovation Lab website and identity</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/lil/lil-3.webp"
+                alt="lil pages"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/4</strong> Simple typography and bold
+                colors
+              </figcaption>
+            </figure>      
+          </li>
+        <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/lil/lil-icons.webp"
+                alt="lil project icons"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/4</strong> Project icons
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/lil/lil-1.webp"
+                alt="lil logos"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/4</strong> Logo variations for mutiple
+                contexts
+              </figcaption>      
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/lil/lil-2.webp"
+                alt="lil responsive"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>4/4</strong> Responsive, mobile-first
+                design
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      The future doesn’t always have to destroy or disrupt the past. It can
+      build on it, strengthen it, and discover its forgotten strengths and
+      successes as well. Harvard’s
+      <a href="http://librarylab.law.harvard.edu">Library Innovation Lab</a>
+      is a brilliant example of the critical role for libraries, academia, and
+      other noncommercial institutions of public knowledge in the digital
+      future. I&nbsp;was fortunate to join their smart, passionate team as a
+      Designer-in-Residence for 2015. Together we built
+      <a href="http://librarylab.law.harvard.edu">a new website</a> and
+      identity system to communicate the Lab’s impressive smarts, vitality,
+      and breadth of accomplishment.
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> Founders Grotesk Text, Post Grotesk     
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
+
+<os-project id="perma-cc">
+  <h2>Perma.cc redesign</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/perma/perma-1.webp"
+                alt="perma responsive"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/3</strong> Content strategy is at the
+                core of the overall product definition
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/perma/perma-3.webp"
+                alt="perma flow"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/3</strong> Simplified flows for common
+                tasks
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/perma/perma-2.webp"
+                alt="perma pages"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/3</strong> Streamlined UI, and a more
+                consistent user experience
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      Link rot kills academic citations and
+      <a href="http://perma.cc">Perma.cc</a> stops link rot. Harvard’s
+      <a href="http://librarylab.law.harvard.edu">Library Innovation Lab</a>
+      developed Perma.cc to provide scholars and legal professionals a way to
+      create permanent, reliable, unbreakable links to the digital sources
+      cited in their work. This redesign helped the Lab take a hard look at
+      the Perma.cc’s usability, making the core functionality more consistent
+      and predictable. We looked at the typefaces, colors, and button shapes,
+      but — just as importantly — at the language system at the center of the
+      overall product definition. We built a trustworthy, bulletproof
+      responsive design to take Perma.cc from a promising beta to a polished
+      1.0 web app.
+      <os-project-typefaces>
+        <strong>Typeface:</strong> Roboto
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
+
+<os-project id="n-plus-one-website">
+  <h2>nplusonemag.com site design</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-content.webp"
+                alt="npo-content"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/6</strong> A focus on detail and
+                typography
+              </figcaption>
+            </figure>
+          </li>
+        <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-online-only.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/6</strong> Modules form the basis of the
+                article discovery model
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-mag-home.webp"
+                alt="npo-mag-home"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/6</strong> Consistent experience across
+                devices
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-article.webp"
+                alt="npo-article"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>4/6</strong> Articles built for longform
+                reading
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-pages.webp"
+                alt="npo-pages"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>5/6</strong> A complete publication suite
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/web/npo-themagazine.webp"
+                alt="npo-themagazine"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>6/6</strong> The canonical version of the
+                magazine is online
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      2014’s redesign (now nearly three years old) was a fundamental change
+      for <a href="https://www.nplusonemag.com">n+1</a>: now the canonical
+      version of the magazine is online. The digital-first redesign allowed
+      n+1 to continue its free web-only articles while adding a new paid
+      online subscription level. The new interactive experience was informed
+      by a detailed content strategy that analyzed the components of the
+      publication and a design strategy that put the reading experience first.
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> Adelle, Adelle Sans, Freight Sans.
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
+
+<os-project id="n-plus-one-magazine">
+  <h2>n+1 publication system</h2>
+  <os-project-content>
+    <os-project-slide class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/sys/np1-sys-occupy.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>1/6</strong>
+                <cite>Occupy!</cite> issue 1 (2011)
+                <span class="note"
+                  >Typefaces: Versa Sans, Nitti, Berthold Akzidenz Grotesk</span
+                >
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/sys/n1-covers-1.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>2/6</strong> n+1 magazine publication
+                design, with original illustrations (2005–present)
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/sys/np1-sys-issue24.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>3/6</strong>
+                <cite>Number 24: New Age</cite> (2016)
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/sys/np1-sys-noregrets.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>4/6</strong>
+                <cite>No Regrets</cite> book (2014)
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/sys/np1-tote-1.webp"
+                alt="npo-online-only"
+                width="1200"
+                height="600"
+              />
+              <figcaption>
+                <strong>5/6</strong> n plus ultra, 10th
+                anniversary tote bags (2014)
+              </figcaption>
+            </figure>
+          </li>
+          <li class="splide__slide">
+            <figure>
+              <img
+                src="/img/npo/uto/500/uto-2.webp"
+                alt="utopia in our time!"
+                width="333"
+                height="500"
+              />
+              <figcaption>
+                <strong>6/6</strong> Utopia in Our Time! silksceen
+                poster (2010 and 2015)
+                <span class="note">Typeface: Utopia (modified)</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </os-project-slide>
+    <p>
+      <a href="https://www.nplusonemag.com">n+1</a> is a journal of politics,
+      literature, and contemporary thought based in Brooklyn, NY. Their
+      publishing system, developed in 2005, is an idiosyncratic mix of
+      traditional typographic design and colorful abstract illustration. From
+      the beginning, n+1’s primary focus has been its texts. Its visual
+      materials are designed to support the writing without overwhelming it —
+      to be distinctive without distraction and to add tone with minimal
+      aesthetic posturing.
+      <os-project-typefaces>
+        <strong>Typefaces:</strong> Versa Sans and Warnock Pro, unless
+        otherwise noted.
+      </os-project-typefaces>
+    </p>
+  </os-project-content>
+</os-project>
