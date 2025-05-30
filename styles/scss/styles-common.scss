@@ -10,7 +10,7 @@
 *:focus,
 .splide.is-focus-in .splide__arrow:focus {
   outline: 2px solid red;
-  outline-offset: calc(var(--grid) / 2);
+  outline-offset: var(--grid-05);
 }
 
 .no-mobile {
@@ -45,11 +45,11 @@ body {
 
 #hello {
   margin: 0 auto;
-  padding: 0 calc(var(--grid) * 2);
+  padding: 0 var(--grid-2);
   width: auto;
-  max-width: var(--width-desktop) + calc(var(--grid) * 4);
+  max-width: var(--width-desktop) + var(--grid-4);
   @include respond-tablet {
-    padding: 0 calc(var(--grid) * 8);
+    padding: 0 var(--grid-8);
     max-width: 58rem;
   }
   @include respond-desktop {
@@ -84,7 +84,7 @@ strong {
 }
 
 h2 {
-  margin-bottom: calc(var(--grid) * 2);
+  margin-bottom: var(--grid-2);
 }
 
 img {
@@ -104,12 +104,12 @@ figure {
 
 os-intro {
   display: block;
-  padding-bottom: calc(var(--grid) * 4);
-  padding-top: var(--spacer);
+  padding-bottom: var(--grid-4);
+  padding-top: var(--grid-2);
   position: relative;
   width: 100%;
   @include respond-tablet {
-    margin: var(--spacer) 0 0 0;
-    padding: var(--spacer) 0 calc(var(--grid) * 4);
+    margin: var(--grid-2) 0 0 0;
+    padding: var(--grid-2) 0 var(--grid-4);
   }
 }
