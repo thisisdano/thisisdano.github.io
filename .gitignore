@@ -12,6 +12,7 @@ node_modules
 webfonts
 .codekit-cache
 .sass-cache/
+*.css
 *.css.map
 _patternlab/
 .styles/css
