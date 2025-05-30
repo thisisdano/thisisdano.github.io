@@ -223,13 +223,13 @@ os-project-slide p {
 
 .splide__arrow--prev {
    @include respond-tablet {
-    left: calc(var(--grid-6) * -1);
+    left: calc(var(--grid-7) * -1);
   } 
 }
 
 .splide__arrow--next {
    @include respond-tablet {
-    right: calc(var(--grid-6) * -1);
+    right: calc(var(--grid-7) * -1);
   } 
 }
 
