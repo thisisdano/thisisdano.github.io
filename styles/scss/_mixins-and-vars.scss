@@ -1,8 +1,19 @@
 :root {
-  --grid: 8px;
+  --grid: 0.5rem;
+  --grid-05: calc(var(--grid) * 0.5);
+  --grid-105: calc(var(--grid) * 0.5);
+  --grid-2: calc(var(--grid) * 2);
+  --grid-3: calc(var(--grid) * 3);
+  --grid-4: calc(var(--grid) * 4);
+  --grid-5: calc(var(--grid) * 5);
+  --grid-6: calc(var(--grid) * 6);
+  --grid-7: calc(var(--grid) * 7);
+  --grid-8: calc(var(--grid) * 8);
+  --grid-9: calc(var(--grid) * 9);
+  --grid-10: calc(var(--grid) * 10);
   --spacer: calc(var(--grid) * 2);
-  --color-primary: #1553ea;
-  --color-secondary: #EB0F0F;
+  --color-primary: oklch(0.5 0.25 264);
+  --color-secondary: oklch(0.6 0.24 28);
   --size-xxs: 0.65em;
   --size-xs: 0.75em;
   --size-sm: 0.825em;
